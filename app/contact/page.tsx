@@ -10,11 +10,23 @@ export default function ContactPage() {
         <ul className={styles.list}>
           <li>
             Email:{" "}
-            <a href="mailto:care@sidhivinayaka.com">care@sidhivinayaka.com</a>
+            <a href="mailto:siddhivinayakaofficial@gmail.com">
+              siddhivinayakaofficial@gmail.com
+            </a>
           </li>
           <li>
             Phone/Whatsapp:{" "}
-            <a href="tel:+919876543210">+91 98765 43210</a>
+            <a href="tel:+919948647319">+91 99486 47319</a>
+          </li>
+          <li>
+            Instagram:{" "}
+            <a
+              href="https://www.instagram.com/siddhivinayakaofficial/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @siddhivinayakaofficial
+            </a>
           </li>
         </ul>
         <ContactForm />

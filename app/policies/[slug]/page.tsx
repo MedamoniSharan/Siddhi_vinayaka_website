@@ -14,7 +14,7 @@ const POLICIES: Record<
   },
   returns: {
     title: "Return, Refund and Cancellation Policy",
-    body: "Easy refunds are available for eligible issues. Perishable sweets may have limited return windows. Contact care@sidhivinayaka.com for support.",
+    body: "Easy refunds are available for eligible issues. Perishable sweets may have limited return windows. Contact siddhivinayakaofficial@gmail.com for support.",
   },
   terms: {
     title: "Terms of Service",

@@ -3,21 +3,21 @@
     "id": "hyderabad",
     "name": "HYDERABAD \u2014 MAIN",
     "address": "Sidhi Vinayaka Sweets & Snacks, Hyderabad, Telangana",
-    "phone": "+91 98765 43210",
+    "phone": "+91 99486 47319",
     "hours": "8:00AM to 9:30PM"
   },
   {
     "id": "secunderabad",
     "name": "SECUNDERABAD",
     "address": "Sidhi Vinayaka Sweets & Snacks, Secunderabad, Telangana",
-    "phone": "+91 98765 43211",
+    "phone": "+91 99486 47319",
     "hours": "8:00AM to 9:30PM"
   },
   {
     "id": "warangal",
     "name": "WARANGAL",
     "address": "Sidhi Vinayaka Sweets & Snacks, Warangal, Telangana",
-    "phone": "+91 98765 43212",
+    "phone": "+91 99486 47319",
     "hours": "8:00AM to 9:30PM"
   }
 ]

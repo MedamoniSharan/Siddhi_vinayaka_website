@@ -32,6 +32,6 @@ Examples:
 ## QA checklist
 - [ ] Logo reads Sidhi Vinayaka
 - [ ] Trust bar / buttons use saffron–maroon tokens
-- [ ] Footer contact uses sidhivinayaka.com
+- [ ] Footer contact uses siddhivinayakaofficial@gmail.com
 - [ ] New catalog (sakinalu, pickles, laddus) visible
 - [ ] Cart drawer still works with new storage key

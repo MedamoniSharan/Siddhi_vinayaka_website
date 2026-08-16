@@ -3,6 +3,7 @@ import { HeroCarousel } from "@/components/home/HeroCarousel";
 import { OurCollections } from "@/components/home/OurCollections";
 import { Testimonials } from "@/components/home/Testimonials";
 import { BrandPillars } from "@/components/home/BrandPillars";
+import { SweetTraditions } from "@/components/home/SweetTraditions";
 import { StoreLocator } from "@/components/home/StoreLocator";
 import { BlogTeasers } from "@/components/home/BlogTeasers";
 import { ProductRail } from "@/components/commerce/ProductRail";
@@ -51,6 +52,7 @@ export default function HomePage() {
         viewAllHref="/shop/?collection=healthy"
       />
       <Testimonials />
+      <SweetTraditions />
       <BrandPillars />
       <StoreLocator />
       <BlogTeasers />
