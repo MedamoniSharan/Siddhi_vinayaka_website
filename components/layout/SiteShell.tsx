@@ -4,7 +4,6 @@ import { CartProvider } from "@/components/commerce/CartProvider";
 import { CartDrawer } from "@/components/commerce/CartDrawer";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Header } from "@/components/layout/Header";
-import { TrustStrip } from "@/components/layout/TrustStrip";
 import { Footer } from "@/components/layout/Footer";
 
 export function SiteShell({ children }: { children: React.ReactNode }) {
@@ -15,7 +14,6 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
       </a>
       <AnnouncementBar />
       <Header />
-      <TrustStrip />
       <main id="main" className="site-main">
         {children}
       </main>

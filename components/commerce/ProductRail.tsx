@@ -18,7 +18,7 @@ export function ProductRail({
 }: ProductRailProps) {
   if (!products.length) {
     return (
-      <section className={`section ${styles.section}`}>
+      <section className={styles.section}>
         <div className="container">
           <h2 className="section-title">{title}</h2>
           <p className={styles.empty}>No products available in this collection.</p>
@@ -28,13 +28,11 @@ export function ProductRail({
   }
 
   return (
-    <section className={`section ${styles.section}`}>
+    <section className={styles.section}>
       <div className="container">
         <div className={styles.header}>
-          <div>
-            <h2 className="section-title">{title}</h2>
-            {subtitle ? <p className="section-subtitle">{subtitle}</p> : null}
-          </div>
+          <h2 className="section-title">{title}</h2>
+          {subtitle ? <p className="section-subtitle">{subtitle}</p> : null}
           <Link href={viewAllHref} className={styles.viewAll}>
             View All
           </Link>

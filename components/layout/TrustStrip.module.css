@@ -1,31 +1,33 @@
 .strip {
-  background: var(--color-trust);
-  color: var(--color-text-inverse);
+  background: #008a4b;
+  color: #ffffff;
 }
 
 .list {
   list-style: none;
   margin: 0;
-  padding: var(--space-12) var(--page-gutter);
+  padding: 14px var(--page-gutter);
   display: flex;
-  gap: var(--space-8);
+  gap: 0;
   overflow-x: auto;
   justify-content: space-evenly;
   width: 100%;
   box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
 }
 
 .item {
   display: flex;
   align-items: center;
-  gap: var(--space-6);
-  white-space: nowrap;
-  font-size: var(--font-size-xs);
-  font-weight: var(--font-weight-medium);
-  padding-inline: var(--space-12);
-  border-right: 1px solid rgba(255, 255, 255, 0.25);
-  flex: 1 1 auto;
   justify-content: center;
+  gap: 10px;
+  flex: 1 1 auto;
+  min-width: max-content;
+  padding-inline: 18px;
+  white-space: nowrap;
+  font-size: 13px;
+  font-weight: 500;
+  border-right: 1px solid #f0c040;
 }
 
 .item:last-child {
@@ -33,5 +35,26 @@
 }
 
 .icon {
-  font-size: var(--font-size-sm);
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  flex: 0 0 auto;
+  filter: brightness(0) invert(1);
+}
+
+@media (max-width: 720px) {
+  .list {
+    padding-block: 12px;
+    justify-content: flex-start;
+  }
+
+  .item {
+    padding-inline: 14px;
+    font-size: 12px;
+  }
+
+  .icon {
+    width: 18px;
+    height: 18px;
+  }
 }

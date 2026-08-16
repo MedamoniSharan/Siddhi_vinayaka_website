@@ -14,10 +14,10 @@ type Slide = {
 
 const SLIDES: Slide[] = [
   {
-    id: "sweets-savouries",
-    desktop: "/images/hero/sweets-savouries-desktop.jpg",
-    mobile: "/images/hero/sweets-savouries-mobile.jpg",
-    alt: "Sweets and savouries — freshly prepared favourites",
+    id: "new-arrival-packs",
+    desktop: "/images/hero/new-arrival-packs.png",
+    mobile: "/images/hero/new-arrival-packs.png",
+    alt: "New arrival — smaller packs, same big flavour. Sweets and savouries snack packs starting from 120g",
     href: "/shop/",
   },
   {

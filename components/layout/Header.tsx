@@ -11,12 +11,16 @@ const NAV = [
     href: "/shop/",
     children: [
       { label: "Sweets", href: "/shop/?collection=sweets" },
-      { label: "Snacks", href: "/shop/?collection=savouries" },
+      { label: "Savouries", href: "/shop/?collection=savouries" },
       { label: "Pickles", href: "/shop/?collection=pickles" },
       { label: "Healthy", href: "/shop/?collection=healthy" },
       { label: "Festival", href: "/shop/?collection=festival" },
+      { label: "Premium", href: "/shop/?collection=premium" },
+      { label: "Best Sellers", href: "/shop/?collection=best-sellers" },
     ],
   },
+  { label: "Gifting", href: "/gifting/" },
+  { label: "Blog", href: "/blog/" },
   { label: "Our Story", href: "/about/" },
   { label: "Contact", href: "/contact/" },
 ];

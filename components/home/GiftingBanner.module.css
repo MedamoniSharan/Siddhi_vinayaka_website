@@ -1,50 +1,62 @@
 .section {
-  padding-block: var(--space-48);
-  background: linear-gradient(
-    120deg,
-    var(--color-hero-cream),
-    var(--color-surface-muted)
-  );
+  position: relative;
+  padding-block: 72px;
+  background:
+    linear-gradient(105deg, rgba(62, 22, 16, 0.88), rgba(154, 43, 36, 0.72)),
+    url("/images/hero/new-arrival-packs.png") center / cover no-repeat;
+  color: #fffaf5;
+  overflow: hidden;
 }
 
 .inner {
-  display: grid;
-  gap: var(--space-20);
-  align-items: center;
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
 }
 
-@media (min-width: 768px) {
-  .inner {
-    grid-template-columns: 1fr auto;
-  }
+.copy {
+  display: grid;
+  gap: 16px;
+  justify-items: start;
 }
 
 .title {
-  margin: 0 0 var(--space-8);
-  font-size: var(--font-size-2xl);
-  line-height: var(--font-line-height-tight);
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
 }
 
 .body {
   margin: 0;
-  max-width: 48ch;
-  color: var(--color-text-secondary);
-  font-size: var(--font-size-sm);
+  max-width: 42ch;
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(255, 250, 245, 0.9);
 }
 
 .cta {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: var(--touch-min);
-  padding: var(--space-12) var(--space-20);
-  border-radius: var(--radius-full);
-  background: var(--color-brand);
-  color: var(--color-text-inverse);
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-semibold);
+  min-height: 44px;
+  margin-top: 8px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: #f0c040;
+  color: #1a1a1a;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .cta:hover {
-  background: var(--color-brand-soft);
+  background: #e8b923;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-block: 96px;
+  }
 }

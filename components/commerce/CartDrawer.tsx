@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useEffect, useId, useRef } from "react";
-import { Button } from "@/components/ui/Button";
 import { useCart } from "@/components/commerce/CartProvider";
 import { formatPrice } from "@/lib/catalog";
 import styles from "./CartDrawer.module.css";
@@ -53,7 +52,9 @@ export function CartDrawer() {
         aria-labelledby={titleId}
       >
         <header className={styles.header}>
-          <h2 id={titleId}>Shopping Cart</h2>
+          <h2 id={titleId} className={styles.title}>
+            Shopping Cart
+          </h2>
           <button
             ref={closeRef}
             type="button"
@@ -61,31 +62,73 @@ export function CartDrawer() {
             aria-label="Close cart drawer"
             onClick={closeCart}
           >
-            ×
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M6 6l12 12M18 6L6 18"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+              />
+            </svg>
           </button>
         </header>
 
-        {items.length === 0 ? (
-          <div className={styles.empty}>
-            <p>Your cart is currently empty.</p>
-            <Link href="/shop/" className={styles.shopNow} onClick={closeCart}>
-              Shop Now
-            </Link>
-          </div>
-        ) : (
-          <>
+        <div className={styles.body}>
+          {items.length === 0 ? (
+            <div className={styles.empty}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                className={styles.emptyLogo}
+                src="/images/logo.png"
+                alt="Siddhi Vinayka Home Foods"
+                width={160}
+                height={160}
+              />
+              <p className={styles.emptyText}>Your cart is currently empty.</p>
+              <Link href="/shop/" className={styles.shopNow} onClick={closeCart}>
+                Shop Now
+              </Link>
+            </div>
+          ) : (
             <ul className={styles.list}>
               {items.map((item) => (
                 <li key={`${item.productId}-${item.weight}`} className={styles.item}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={item.image} alt="" />
-                  <div className={styles.meta}>
-                    <Link href={`/product/${item.slug}/`} onClick={closeCart}>
-                      {item.name}
-                    </Link>
-                    <p>{item.weight}</p>
-                    <p>{formatPrice(item.price)}</p>
-                    <div className={styles.qty}>
+                  <Link
+                    href={`/product/${item.slug}/`}
+                    className={styles.itemImage}
+                    onClick={closeCart}
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={item.image} alt="" />
+                  </Link>
+                  <div className={styles.itemInfo}>
+                    <div className={styles.itemTop}>
+                      <Link
+                        href={`/product/${item.slug}/`}
+                        className={styles.itemTitle}
+                        onClick={closeCart}
+                      >
+                        {item.name}
+                      </Link>
+                      <button
+                        type="button"
+                        className={styles.remove}
+                        aria-label={`Remove ${item.name}`}
+                        onClick={() => removeItem(item.productId, item.weight)}
+                      >
+                        <svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true">
+                          <path
+                            d="M6 6l12 12M18 6L6 18"
+                            stroke="currentColor"
+                            strokeWidth="2.2"
+                            strokeLinecap="round"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <p className={styles.itemOption}>{item.weight}</p>
+                    <p className={styles.itemPrice}>{formatPrice(item.price)}</p>
+                    <div className={styles.qty} role="group" aria-label={`Quantity for ${item.name}`}>
                       <button
                         type="button"
                         aria-label={`Decrease quantity of ${item.name}`}
@@ -106,28 +149,28 @@ export function CartDrawer() {
                         +
                       </button>
                     </div>
-                    <button
-                      type="button"
-                      className={styles.remove}
-                      onClick={() => removeItem(item.productId, item.weight)}
-                    >
-                      Remove
-                    </button>
                   </div>
                 </li>
               ))}
             </ul>
-            <footer className={styles.footer}>
-              <div className={styles.subtotal}>
-                <span>Subtotal</span>
-                <strong>{formatPrice(subtotal)}</strong>
-              </div>
-              <Button fullWidth variant="dark" disabled ariaLabel="Checkout coming soon">
-                Checkout — Coming soon
-              </Button>
-            </footer>
-          </>
-        )}
+          )}
+        </div>
+
+        <footer className={styles.footer}>
+          <div className={styles.subtotal}>
+            <span>Subtotal</span>
+            <strong>{formatPrice(subtotal)}</strong>
+          </div>
+          <button type="button" className={styles.buyNow} disabled>
+            BUY NOW
+          </button>
+          {items.length > 0 ? (
+            <button type="button" className={styles.checkout} disabled>
+              Checkout
+            </button>
+          ) : null}
+          <p className={styles.comingSoon}>Checkout coming soon</p>
+        </footer>
       </aside>
     </div>
   );

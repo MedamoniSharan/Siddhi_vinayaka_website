@@ -3,7 +3,7 @@
     "id": "sweets",
     "name": "Sweets",
     "href": "/shop/?collection=sweets",
-    "image": "/images/products/laddu.jpg",
+    "image": "/images/categories/sweets.png",
     "collectionKey": "sweets"
   },
   {

@@ -1,51 +1,58 @@
 [
   {
-    "id": "sweets",
-    "name": "Sweets",
-    "href": "/shop/?collection=sweets",
-    "image": "/images/products/laddu.jpg",
+    "id": "flash-sale",
+    "name": "Flash Sale",
+    "href": "/shop/?collection=best-sellers",
+    "image": "/images/categories/flash.svg",
     "badge": null
   },
   {
-    "id": "snacks",
-    "name": "Snacks",
+    "id": "sweets",
+    "name": "Sweets",
+    "href": "/shop/?collection=sweets",
+    "image": "/images/categories/sweets.png",
+    "badge": null
+  },
+  {
+    "id": "savouries",
+    "name": "Savouries",
     "href": "/shop/?collection=savouries",
-    "image": "/images/products/muruku.jpg",
+    "image": "/images/categories/savouries.png",
+    "badge": null
+  },
+  {
+    "id": "premium",
+    "name": "Artisanal Sweets",
+    "href": "/shop/?collection=premium",
+    "image": "/images/categories/artisanal.png",
+    "badge": "Premium"
+  },
+  {
+    "id": "festival",
+    "name": "Festival",
+    "href": "/shop/?collection=festival",
+    "image": "/images/categories/kovilpatti.png",
+    "badge": "Traditional"
+  },
+  {
+    "id": "gifting",
+    "name": "Gifting",
+    "href": "/gifting/",
+    "image": "/images/categories/gifting.png",
     "badge": null
   },
   {
     "id": "pickles",
     "name": "Pickles",
     "href": "/shop/?collection=pickles",
-    "image": "/images/products/mutton-pickle.jpg",
+    "image": "/images/categories/podi.png",
     "badge": null
   },
   {
     "id": "healthy",
-    "name": "Healthy",
+    "name": "Newly Launched",
     "href": "/shop/?collection=healthy",
-    "image": "/images/products/ragi-laddu.jpg",
-    "badge": null
-  },
-  {
-    "id": "festival",
-    "name": "Festival",
-    "href": "/shop/?collection=festival",
-    "image": "/images/products/bellam-gavvalu.jpg",
-    "badge": null
-  },
-  {
-    "id": "premium",
-    "name": "Premium",
-    "href": "/shop/?collection=premium",
-    "image": "/images/products/dry-fruit-laddu.jpg",
-    "badge": "Premium"
-  },
-  {
-    "id": "best-sellers",
-    "name": "Best Sellers",
-    "href": "/shop/?collection=best-sellers",
-    "image": "/images/products/sakinalu.jpg",
-    "badge": "Top"
+    "image": "/images/categories/new.png",
+    "badge": "New In"
   }
 ]

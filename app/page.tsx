@@ -1,11 +1,12 @@
 import { CategoryGrid } from "@/components/home/CategoryGrid";
 import { HeroCarousel } from "@/components/home/HeroCarousel";
-import { OurCollections } from "@/components/home/OurCollections";
 import { Testimonials } from "@/components/home/Testimonials";
-import { BrandPillars } from "@/components/home/BrandPillars";
 import { SweetTraditions } from "@/components/home/SweetTraditions";
 import { StoreLocator } from "@/components/home/StoreLocator";
+import { BlogTeasers } from "@/components/home/BlogTeasers";
+import { GiftingBanner } from "@/components/home/GiftingBanner";
 import { ProductRail } from "@/components/commerce/ProductRail";
+import { TrustStrip } from "@/components/layout/TrustStrip";
 import { getProductsByCollection, allProducts } from "@/lib/catalog";
 
 export default function HomePage() {
@@ -13,13 +14,13 @@ export default function HomePage() {
   const savouries = getProductsByCollection("savouries");
   const sweets = getProductsByCollection("sweets");
   const pickles = getProductsByCollection("pickles");
-  const healthy = getProductsByCollection("healthy");
+  const premium = getProductsByCollection("premium");
 
   return (
     <>
       <CategoryGrid />
+      <TrustStrip />
       <HeroCarousel />
-      <OurCollections />
       <ProductRail
         title="Our Best Sellers"
         subtitle={`${allProducts.length} traditional favourites — sweets, snacks & pickles.`}
@@ -27,7 +28,7 @@ export default function HomePage() {
         viewAllHref="/shop/?collection=best-sellers"
       />
       <ProductRail
-        title="Snacks"
+        title="Savouries"
         subtitle="Sakinalu, muruku, chegodi, karapusa and more."
         products={savouries}
         viewAllHref="/shop/?collection=savouries"
@@ -44,16 +45,17 @@ export default function HomePage() {
         products={pickles}
         viewAllHref="/shop/?collection=pickles"
       />
+      <GiftingBanner />
       <ProductRail
-        title="Healthy Laddus"
-        subtitle="Ragi, flax seed, minapa, pesara and more."
-        products={healthy}
-        viewAllHref="/shop/?collection=healthy"
+        title="Our Master Pieces"
+        subtitle="Premium picks crafted for celebrations."
+        products={premium}
+        viewAllHref="/shop/?collection=premium"
       />
       <Testimonials />
       <SweetTraditions />
-      <BrandPillars />
       <StoreLocator />
+      <BlogTeasers />
     </>
   );
 }

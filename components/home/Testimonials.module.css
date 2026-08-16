@@ -1,14 +1,16 @@
 .section {
-  background: var(--color-surface-muted);
+  background: #f3ebe3;
+  text-align: center;
 }
 
 .card {
-  margin: 0;
-  padding: var(--space-32);
-  background: var(--color-surface-base);
-  border-radius: var(--radius-xl);
-  box-shadow: var(--shadow-card);
+  margin: 24px auto 0;
+  padding: 36px 28px;
+  background: #fffaf5;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   max-width: 720px;
+  text-align: left;
 }
 
 .card blockquote {
@@ -17,28 +19,35 @@
 
 .card p {
   margin: 0;
-  font-size: var(--font-size-lg);
-  line-height: var(--font-line-height-snug);
+  font-size: 20px;
+  line-height: 1.45;
+  color: #3a1f14;
 }
 
 .card figcaption {
-  margin-top: var(--space-16);
-  font-weight: var(--font-weight-semibold);
-  color: var(--color-brand);
+  margin-top: 16px;
+  font-weight: 600;
+  color: #9a2b24;
 }
 
 .controls {
   display: flex;
-  gap: var(--space-8);
-  margin-top: var(--space-16);
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
 }
 
 .controls button {
-  width: var(--touch-min);
-  height: var(--touch-min);
-  border-radius: var(--radius-full);
-  border: 1px solid var(--color-border-subtle);
-  background: var(--color-surface-base);
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid #ebe4dc;
+  background: #fffaf5;
   cursor: pointer;
-  font-size: var(--font-size-xl);
+  font-size: 21px;
+  color: #3a1f14;
+}
+
+.controls button:hover {
+  border-color: #c45c1a;
 }

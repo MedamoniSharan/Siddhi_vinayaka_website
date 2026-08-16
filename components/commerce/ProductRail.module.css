@@ -1,24 +1,26 @@
 .section {
-  background: var(--color-surface-base);
+  background: #fef9ef;
+  padding-block: 40px;
 }
 
 .header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: var(--space-16);
-  margin-bottom: var(--space-24);
+  position: relative;
+  margin-bottom: 28px;
+  text-align: center;
+  padding-inline: 0;
 }
 
 .viewAll {
-  flex-shrink: 0;
-  min-height: var(--touch-min);
   display: inline-flex;
   align-items: center;
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-semibold);
+  justify-content: center;
+  margin-top: 4px;
+  min-height: 36px;
+  font-size: 13px;
+  font-weight: 600;
   text-decoration: underline;
   text-underline-offset: 3px;
+  color: #3a1f14;
 }
 
 .viewAll:hover {
@@ -27,18 +29,18 @@
 
 .rail {
   display: flex;
-  gap: var(--space-card-gap);
+  gap: 16px;
   overflow-x: auto;
-  padding-bottom: var(--space-12);
+  padding-bottom: 12px;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
 }
 
 .rail > * {
   scroll-snap-align: start;
-  flex: 0 0 clamp(240px, 18vw, 300px);
-  min-width: clamp(240px, 18vw, 300px);
-  max-width: 300px;
+  flex: 0 0 clamp(220px, 20vw, 280px);
+  min-width: clamp(220px, 20vw, 280px);
+  max-width: 280px;
 }
 
 .rail:focus-visible {
@@ -50,4 +52,22 @@
   margin: 0;
   color: var(--color-text-muted);
   font-size: var(--font-size-sm);
+  text-align: center;
+}
+
+@media (min-width: 900px) {
+  .section {
+    padding-block: 56px;
+  }
+
+  .header {
+    margin-bottom: 36px;
+  }
+
+  .viewAll {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    margin-top: 0;
+  }
 }

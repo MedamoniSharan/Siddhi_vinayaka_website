@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Button } from "@/components/ui/Button";
 import { useCart } from "@/components/commerce/CartProvider";
 import { formatPrice } from "@/lib/catalog";
 import type { Product } from "@/lib/types";
@@ -32,80 +31,94 @@ export function ProductCard({ product }: ProductCardProps) {
     }
   }
 
+  const badgeLabel = product.soldOut
+    ? "Sold Out"
+    : product.badge;
+
   return (
-    <article className={styles.card} data-sold-out={product.soldOut || undefined}>
-      {product.tag ? <p className={styles.tag}>{product.tag}</p> : null}
+    <article
+      className={styles.card}
+      data-sold-out={product.soldOut || undefined}
+      data-has-tag={product.tag ? "true" : undefined}
+    >
+      {product.tag ? <p className={styles.topTag}>{product.tag}</p> : null}
+
       <Link href={`/product/${product.slug}/`} className={styles.mediaLink}>
         <div className={styles.media}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={product.image} alt={product.name} loading="lazy" />
-          {product.badge ? (
+          {badgeLabel ? (
             <span
               className={
-                product.soldOut || product.badge.toLowerCase().includes("sold")
+                product.soldOut || badgeLabel.toLowerCase().includes("sold")
                   ? styles.badgeSold
                   : styles.badge
               }
             >
-              {product.badge}
+              {badgeLabel}
             </span>
           ) : null}
         </div>
-        <h3 className={styles.title}>{product.name}</h3>
       </Link>
-      <div className={styles.priceRow}>
-        <span className={styles.price}>{formatPrice(product.price)}</span>
-        {product.compareAt ? (
-          <span className={styles.compare}>{formatPrice(product.compareAt)}</span>
+
+      <div className={styles.content}>
+        <h3 className={styles.title}>
+          <Link href={`/product/${product.slug}/`}>{product.name}</Link>
+        </h3>
+
+        <div className={styles.priceRow}>
+          <span className={styles.price}>{formatPrice(product.price)}</span>
+          {product.compareAt ? (
+            <span className={styles.compare}>{formatPrice(product.compareAt)}</span>
+          ) : null}
+        </div>
+
+        {product.weights.length > 0 ? (
+          <div
+            className={styles.weights}
+            role="group"
+            aria-label={`Select weight for ${product.name}`}
+          >
+            {product.weights.map((w) => (
+              <button
+                key={w}
+                type="button"
+                className={weight === w ? styles.weightActive : styles.weight}
+                aria-pressed={weight === w}
+                onClick={() => setWeight(w)}
+              >
+                {w}
+              </button>
+            ))}
+          </div>
+        ) : null}
+
+        {product.reviews > 0 ? (
+          <p className={styles.reviews}>{product.reviews} reviews</p>
+        ) : null}
+
+        <button
+          type="button"
+          className={styles.addToCart}
+          disabled={product.soldOut || loading}
+          aria-busy={loading || undefined}
+          aria-invalid={error || undefined}
+          aria-label={
+            product.soldOut
+              ? `${product.name} is sold out`
+              : `Add ${product.name} ${weight} to cart`
+          }
+          onClick={handleAdd}
+        >
+          {loading ? "Adding…" : product.soldOut ? "Sold Out" : "Add to cart"}
+        </button>
+
+        {error ? (
+          <p className={styles.errorText} role="alert">
+            Could not add to cart. Try again.
+          </p>
         ) : null}
       </div>
-      {product.weights.length > 1 ? (
-        <div
-          className={styles.weights}
-          role="group"
-          aria-label={`Select weight for ${product.name}`}
-        >
-          {product.weights.map((w) => (
-            <button
-              key={w}
-              type="button"
-              className={weight === w ? styles.weightActive : styles.weight}
-              aria-pressed={weight === w}
-              onClick={() => setWeight(w)}
-            >
-              {w}
-            </button>
-          ))}
-        </div>
-      ) : (
-        <p className={styles.singleWeight}>{product.weights[0]}</p>
-      )}
-      {product.reviews > 0 ? (
-        <p className={styles.reviews}>{product.reviews} reviews</p>
-      ) : (
-        <p className={styles.reviews}>No reviews</p>
-      )}
-      <p className={styles.description}>{product.description}</p>
-      <Button
-        fullWidth
-        variant="dark"
-        disabled={product.soldOut}
-        loading={loading}
-        error={error}
-        onClick={handleAdd}
-        ariaLabel={
-          product.soldOut
-            ? `${product.name} is sold out`
-            : `Add ${product.name} ${weight} to cart`
-        }
-      >
-        {product.soldOut ? "Sold Out" : "Add to cart"}
-      </Button>
-      {error ? (
-        <p className={styles.errorText} role="alert">
-          Could not add to cart. Try again.
-        </p>
-      ) : null}
     </article>
   );
 }
