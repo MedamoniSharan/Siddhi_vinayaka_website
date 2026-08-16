@@ -17,7 +17,6 @@ const NAV = [
       { label: "Festival", href: "/shop/?collection=festival" },
     ],
   },
-  { label: "Blog", href: "/blog/" },
   { label: "Our Story", href: "/about/" },
   { label: "Contact", href: "/contact/" },
 ];

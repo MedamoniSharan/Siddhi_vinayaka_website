@@ -14,32 +14,18 @@ type Slide = {
 
 const SLIDES: Slide[] = [
   {
-    id: "snacks",
-    desktop: "/images/hero/snacks-desktop.jpg",
-    mobile: "/images/hero/snacks-mobile.jpg",
-    alt: "Traditional snacks — sakinalu, muruku and more",
-    href: "/shop/?collection=savouries",
+    id: "sweets-savouries",
+    desktop: "/images/hero/sweets-savouries-desktop.jpg",
+    mobile: "/images/hero/sweets-savouries-mobile.jpg",
+    alt: "Sweets and savouries — freshly prepared favourites",
+    href: "/shop/",
   },
   {
-    id: "sweets",
-    desktop: "/images/hero/sweets-desktop.jpg",
-    mobile: "/images/hero/sweets-mobile.jpg",
-    alt: "Handcrafted sweets and laddus",
-    href: "/shop/?collection=sweets",
-  },
-  {
-    id: "pickles",
-    desktop: "/images/hero/pickles-desktop.jpg",
-    mobile: "/images/hero/pickles-mobile.jpg",
-    alt: "Home-style mutton, chicken, fish and prawns pickle",
-    href: "/shop/?collection=pickles",
-  },
-  {
-    id: "festival",
-    desktop: "/images/hero/festival-desktop.jpg",
-    mobile: "/images/hero/festival-mobile.jpg",
-    alt: "Festival sweets and specials",
-    href: "/shop/?collection=festival",
+    id: "flash-sale",
+    desktop: "/images/hero/flash-sale-desktop.png",
+    mobile: "/images/hero/flash-sale-mobile.png",
+    alt: "Flash sale on sweets and snacks",
+    href: "/shop/?collection=best-sellers",
   },
 ];
 

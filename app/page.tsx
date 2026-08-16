@@ -5,7 +5,6 @@ import { Testimonials } from "@/components/home/Testimonials";
 import { BrandPillars } from "@/components/home/BrandPillars";
 import { SweetTraditions } from "@/components/home/SweetTraditions";
 import { StoreLocator } from "@/components/home/StoreLocator";
-import { BlogTeasers } from "@/components/home/BlogTeasers";
 import { ProductRail } from "@/components/commerce/ProductRail";
 import { getProductsByCollection, allProducts } from "@/lib/catalog";
 
@@ -55,7 +54,6 @@ export default function HomePage() {
       <SweetTraditions />
       <BrandPillars />
       <StoreLocator />
-      <BlogTeasers />
     </>
   );
 }
