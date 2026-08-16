@@ -1,26 +1,22 @@
 # Sidhi Vinayaka Sweets & Snacks
 
-Static Next.js storefront for Sidhi Vinayaka Sweets & Snacks — traditional Telangana & Andhra sweets, snacks, and pickles.
+Static Next.js storefront for Sidhi Vinayaka — traditional Telangana & Andhra sweets, savouries, and pickles.
 
-## Stack
-
-- Next.js (App Router) + React + TypeScript
-- CSS Modules
-- Static export (`output: "export"`)
-
-## Develop
+## Commands
 
 ```bash
-npm install
-npm run dev
+npm run dev    # http://localhost:3000
+npm run build  # static export to out/
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+## Brand (Phase 2)
 
-## Build
+- Name: **Sidhi Vinayaka Sweets & Snacks**
+- Tokens: saffron brand + maroon trust bar (`styles/tokens.css`)
+- Logo: `public/images/logo.png`
 
-```bash
-npm run build
-```
+## Structure
 
-Static files are written to `out/`.
+- `data/` — products, categories, stores, testimonials
+- `components/` — layout, commerce, home sections
+- `docs/UI_GUIDELINES.md` — component + a11y rules

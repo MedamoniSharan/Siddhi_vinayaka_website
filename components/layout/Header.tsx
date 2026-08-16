@@ -44,63 +44,80 @@ export function Header() {
     };
   }, [mobileOpen]);
 
+  const leftNav = NAV.slice(0, Math.ceil(NAV.length / 2));
+  const rightNav = NAV.slice(Math.ceil(NAV.length / 2));
+
   return (
     <header className={styles.header}>
       <div className={styles.bar}>
-        <button
-          type="button"
-          className={styles.iconBtn}
-          aria-label="Open menu"
-          aria-expanded={mobileOpen}
-          onClick={() => setMobileOpen(true)}
-        >
-          <span className={styles.burger} aria-hidden />
-        </button>
+        <div className={styles.sideLeft}>
+          <button
+            type="button"
+            className={`${styles.iconBtn} ${styles.menuBtn}`}
+            aria-label="Open menu"
+            aria-expanded={mobileOpen}
+            onClick={() => setMobileOpen(true)}
+          >
+            <span className={styles.burger} aria-hidden />
+          </button>
 
-        <Link href="/" className={styles.logo} aria-label="Sidhi Vinayaka Sweets & Snacks home">
+          <nav className={styles.desktopNav} aria-label="Primary">
+            <ul>
+              {leftNav.map((item) => (
+                <li key={item.label}>
+                  <Link href={item.href}>{item.label}</Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
+
+        <Link href="/" className={styles.logo} aria-label="Siddhi Vinayka Home Foods home">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/logo.svg" alt="Sidhi Vinayaka Sweets & Snacks" />
+          <img src="/images/logo.png" width={512} height={512} alt="Siddhi Vinayka Home Foods" />
         </Link>
 
-        <nav className={styles.desktopNav} aria-label="Primary">
-          <ul>
-            {NAV.map((item) => (
-              <li key={item.label}>
-                <Link href={item.href}>{item.label}</Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        <div className={styles.sideRight}>
+          <nav className={styles.desktopNav} aria-label="Secondary">
+            <ul>
+              {rightNav.map((item) => (
+                <li key={item.label}>
+                  <Link href={item.href}>{item.label}</Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
 
-        <div className={styles.actions}>
-          <button
-            type="button"
-            className={styles.iconBtn}
-            aria-label="Search"
-            aria-expanded={searchOpen}
-            onClick={() => setSearchOpen((v) => !v)}
-          >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden>
-              <circle cx="11" cy="11" r="7" stroke="currentColor" strokeWidth="2" />
-              <path d="M20 20l-3.5-3.5" stroke="currentColor" strokeWidth="2" />
-            </svg>
-          </button>
-          <button
-            type="button"
-            className={styles.iconBtn}
-            aria-label={`Cart, ${itemCount} items`}
-            onClick={openCart}
-          >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden>
-              <path
-                d="M6 7h12l-1 12H7L6 7z"
-                stroke="currentColor"
-                strokeWidth="2"
-              />
-              <path d="M9 7a3 3 0 016 0" stroke="currentColor" strokeWidth="2" />
-            </svg>
-            <span className={styles.badge}>{itemCount}</span>
-          </button>
+          <div className={styles.actions}>
+            <button
+              type="button"
+              className={styles.iconBtn}
+              aria-label="Search"
+              aria-expanded={searchOpen}
+              onClick={() => setSearchOpen((v) => !v)}
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden>
+                <circle cx="11" cy="11" r="7" stroke="currentColor" strokeWidth="2" />
+                <path d="M20 20l-3.5-3.5" stroke="currentColor" strokeWidth="2" />
+              </svg>
+            </button>
+            <button
+              type="button"
+              className={styles.iconBtn}
+              aria-label={`Cart, ${itemCount} items`}
+              onClick={openCart}
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden>
+                <path
+                  d="M6 7h12l-1 12H7L6 7z"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                />
+                <path d="M9 7a3 3 0 016 0" stroke="currentColor" strokeWidth="2" />
+              </svg>
+              <span className={styles.badge}>{itemCount}</span>
+            </button>
+          </div>
         </div>
       </div>
 

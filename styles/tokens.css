@@ -80,7 +80,7 @@
 
   --max-width: 100%;
   --page-gutter: clamp(16px, 3vw, 40px);
-  --header-height: 64px;
+  --header-height: 76px;
   --touch-min: 44px;
 }
 
