@@ -1,0 +1,46 @@
+.bar {
+  background: var(--color-promo);
+  color: var(--color-text-primary);
+  overflow: hidden;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.track {
+  display: flex;
+  gap: var(--space-40);
+  width: max-content;
+  padding-block: var(--space-8);
+  animation: marquee 40s linear infinite;
+}
+
+.item {
+  white-space: nowrap;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.item:hover {
+  color: var(--color-brand);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    animation: none;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    gap: var(--space-16);
+    padding-inline: var(--space-12);
+  }
+}

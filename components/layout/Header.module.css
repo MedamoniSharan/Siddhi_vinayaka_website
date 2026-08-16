@@ -1,0 +1,252 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: var(--color-surface-base);
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.bar {
+  display: grid;
+  grid-template-columns: var(--touch-min) 1fr auto;
+  align-items: center;
+  gap: var(--space-8);
+  min-height: var(--header-height);
+  padding-inline: var(--page-gutter);
+  max-width: var(--max-width);
+  margin-inline: auto;
+  width: 100%;
+}
+
+@media (min-width: 960px) {
+  .bar {
+    grid-template-columns: auto 1fr auto auto;
+  }
+}
+
+.logo {
+  justify-self: center;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 42px;
+  width: auto;
+  max-width: min(220px, 70vw);
+}
+
+@media (min-width: 960px) {
+  .logo {
+    justify-self: start;
+  }
+
+  .logo img {
+    height: 50px;
+    max-width: 280px;
+  }
+}
+
+.desktopNav {
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .desktopNav {
+    display: block;
+  }
+
+  .desktopNav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: var(--space-20);
+    justify-content: center;
+  }
+
+  .desktopNav a {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    min-height: var(--touch-min);
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .desktopNav a:hover {
+    color: var(--color-brand);
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.iconBtn {
+  position: relative;
+  width: var(--touch-min);
+  height: var(--touch-min);
+  border: 0;
+  background: transparent;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-primary);
+}
+
+.iconBtn:hover {
+  background: var(--color-surface-muted);
+}
+
+.burger,
+.burger::before,
+.burger::after {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: currentColor;
+  position: relative;
+}
+
+.burger::before,
+.burger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.burger::before {
+  top: -6px;
+}
+
+.burger::after {
+  top: 6px;
+}
+
+@media (min-width: 960px) {
+  .iconBtn:has(.burger) {
+    display: none;
+  }
+}
+
+.badge {
+  position: absolute;
+  top: 6px;
+  right: 4px;
+  min-width: 16px;
+  height: 16px;
+  padding-inline: 3px;
+  border-radius: var(--radius-full);
+  background: var(--color-brand);
+  color: var(--color-text-inverse);
+  font-size: 10px;
+  line-height: 16px;
+  text-align: center;
+  font-weight: var(--font-weight-bold);
+}
+
+.searchPanel {
+  border-top: 1px solid var(--color-border-subtle);
+  padding: var(--space-12) var(--space-16) var(--space-16);
+  background: var(--color-surface-raised);
+}
+
+.searchPanel input {
+  width: 100%;
+  min-height: var(--touch-min);
+  padding: var(--space-8) var(--space-12);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-base);
+}
+
+.searchPanel input:focus-visible {
+  border-color: var(--color-brand);
+}
+
+.popular {
+  margin: var(--space-8) 0 0;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+}
+
+.mobileRoot {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: flex;
+}
+
+.mobileBackdrop {
+  flex: 1;
+  border: 0;
+  background: var(--color-overlay);
+  cursor: pointer;
+}
+
+.mobilePanel {
+  width: min(100%, 320px);
+  background: var(--color-surface-base);
+  height: 100%;
+  overflow: auto;
+  box-shadow: var(--shadow-elevated);
+  animation: slide var(--motion-fast) var(--motion-ease);
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mobilePanel {
+    animation: none;
+  }
+}
+
+.mobileHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-12) var(--space-12) var(--space-12) var(--space-20);
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.mobileHeader h2 {
+  margin: 0;
+  font-size: var(--font-size-lg);
+}
+
+.mobileList {
+  list-style: none;
+  margin: 0;
+  padding: var(--space-12) var(--space-20);
+  display: grid;
+  gap: var(--space-8);
+}
+
+.mobileList a {
+  display: flex;
+  align-items: center;
+  min-height: var(--touch-min);
+  font-weight: var(--font-weight-semibold);
+}
+
+.mobileList ul {
+  list-style: none;
+  margin: 0;
+  padding-left: var(--space-12);
+}
+
+.mobileList ul a {
+  font-weight: var(--font-weight-base);
+  color: var(--color-text-secondary);
+}

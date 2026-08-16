@@ -1,0 +1,51 @@
+[
+  {
+    "id": "sweets",
+    "name": "Sweets",
+    "href": "/shop/?collection=sweets",
+    "image": "/images/products/laddu.jpg",
+    "badge": null
+  },
+  {
+    "id": "snacks",
+    "name": "Snacks",
+    "href": "/shop/?collection=savouries",
+    "image": "/images/products/muruku.jpg",
+    "badge": null
+  },
+  {
+    "id": "pickles",
+    "name": "Pickles",
+    "href": "/shop/?collection=pickles",
+    "image": "/images/products/mutton-pickle.jpg",
+    "badge": null
+  },
+  {
+    "id": "healthy",
+    "name": "Healthy",
+    "href": "/shop/?collection=healthy",
+    "image": "/images/products/ragi-laddu.jpg",
+    "badge": null
+  },
+  {
+    "id": "festival",
+    "name": "Festival",
+    "href": "/shop/?collection=festival",
+    "image": "/images/products/bellam-gavvalu.jpg",
+    "badge": null
+  },
+  {
+    "id": "premium",
+    "name": "Premium",
+    "href": "/shop/?collection=premium",
+    "image": "/images/products/dry-fruit-laddu.jpg",
+    "badge": "Premium"
+  },
+  {
+    "id": "best-sellers",
+    "name": "Best Sellers",
+    "href": "/shop/?collection=best-sellers",
+    "image": "/images/products/sakinalu.jpg",
+    "badge": "Top"
+  }
+]

@@ -1,0 +1,94 @@
+/* Phase 2 — Sidhi Vinayaka brand tokens */
+:root {
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #333333;
+  --color-text-inverse: #ffffff;
+  --color-text-muted: #666666;
+  --color-border-subtle: #ebe4dc;
+  --color-border-strong: #c45c1a;
+  --color-surface-base: #ffffff;
+  --color-surface-page: #faf6f1;
+  --color-surface-muted: #f5efe8;
+  --color-surface-raised: #fffdf9;
+  --color-surface-strong: #f3ebe3;
+  --color-promo: #f7e4b8;
+  --color-trust: #7a2e12;
+  --color-brand: #c45c1a;
+  --color-brand-soft: #a64a12;
+  --color-accent-sale: #b00020;
+  --color-accent-yellow: #e8b923;
+  --color-accent-badge: #f0c040;
+  --color-focus-ring: #c45c1a;
+  --color-error: #b00020;
+  --color-disabled: #bdbdbd;
+  --color-disabled-text: #757575;
+  --color-overlay: rgba(0, 0, 0, 0.45);
+  --color-logo-mark: #e8b923;
+  --color-hero-cream: #f3e6d4;
+
+  --font-family-primary: var(--font-inter), system-ui, sans-serif;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 21px;
+  --font-size-2xl: 26px;
+  --font-size-3xl: 30px;
+  --font-size-4xl: 32px;
+  --font-weight-base: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-line-height-base: 24px;
+  --font-line-height-tight: 1.2;
+  --font-line-height-snug: 1.35;
+
+  --space-1: 1px;
+  --space-2: 3px;
+  --space-3: 4px;
+  --space-4: 5px;
+  --space-5: 6px;
+  --space-6: 8px;
+  --space-7: 9px;
+  --space-8: 10px;
+  --space-12: calc(var(--space-6) * 2);
+  --space-16: calc(var(--space-6) * 3);
+  --space-20: calc(var(--space-8) * 2);
+  --space-24: calc(var(--space-6) * 4);
+  --space-32: calc(var(--space-6) * 5);
+  --space-40: calc(var(--space-8) * 4);
+  --space-48: calc(var(--space-6) * 6);
+  --space-64: calc(var(--space-6) * 8);
+  --space-section: calc(var(--space-8) * 5);
+  --space-card-gap: calc(var(--space-6) * 2);
+
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --radius-xl: 12px;
+  --radius-full: 9999px;
+
+  --motion-instant: 150ms;
+  --motion-fast: 300ms;
+  --motion-normal: 500ms;
+  --motion-slow: 600ms;
+  --motion-ease: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-elevated: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+  --max-width: 100%;
+  --page-gutter: clamp(16px, 3vw, 40px);
+  --header-height: 64px;
+  --touch-min: 44px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-instant: 0ms;
+    --motion-fast: 0ms;
+    --motion-normal: 0ms;
+    --motion-slow: 0ms;
+  }
+}

@@ -1,0 +1,666 @@
+[
+  {
+    "id": "sakinalu",
+    "slug": "sakinalu",
+    "name": "Sakinalu",
+    "price": 400,
+    "compareAt": null,
+    "image": "/images/products/sakinalu.jpg",
+    "badge": "best seller",
+    "tag": "Made with Groundnut Oil",
+    "weights": [
+      "250 g",
+      "500 g",
+      "1 kg"
+    ],
+    "reviews": 0,
+    "description": "Traditional Telangana rice-flour spiral snack with sesame.",
+    "collection": [
+      "best-sellers",
+      "savouries",
+      "festival"
+    ],
+    "soldOut": false,
+    "oil": "groundnut"
+  },
+  {
+    "id": "gyrelu",
+    "slug": "gyrelu",
+    "name": "Gyrelu",
+    "price": 400,
+    "compareAt": null,
+    "image": "/images/products/gyrelu.jpg",
+    "badge": null,
+    "tag": "Made with Groundnut Oil",
+    "weights": [
+      "250 g",
+      "500 g",
+      "1 kg"
+    ],
+    "reviews": 0,
+    "description": "Crispy deep-fried lentil fritters, golden and savoury.",
+    "collection": [
+      "best-sellers",
+      "savouries"
+    ],
+    "soldOut": false,
+    "oil": "groundnut"
+  },
+  {
+    "id": "muruku",
+    "slug": "muruku",
+    "name": "Muruku",
+    "price": 380,
+    "compareAt": null,
+    "image": "/images/products/muruku.jpg",
+    "badge": "best seller",
+    "tag": "Made with Groundnut Oil",
+    "weights": [
+      "250 g",
+      "500 g",
+      "1 kg"
+    ],
+    "reviews": 0,
+    "description": "Classic crunchy rice-flour muruku, freshly prepared.",
+    "collection": [
+      "best-sellers",
+      "savouries"
+    ],
+    "soldOut": false,
+    "oil": "groundnut"
+  },
+  {
+    "id": "chegodi",
+    "slug": "chegodi",
+    "name": "Chegodi",
+    "price": 380,
+    "compareAt": null,
+    "image": "/images/products/chegodi.jpg",
+    "badge": "best seller",
+    "tag": "Made with Groundnut Oil",
+    "weights": [
+      "250 g",
+      "500 g",
+      "1 kg"
+    ],
+    "reviews": 0,
+    "description": "Ring-shaped spicy rice-flour snack from Telangana.",
+    "collection": [
+      "best-sellers",
+      "savouries"
+    ],
+    "soldOut": false,
+    "oil": "groundnut"
+  },
+  {
+    "id": "karapusa",
+    "slug": "karapusa",
+    "name": "Karapusa",
+    "price": 380,
+    "compareAt": null,
+    "image": "/images/products/karapusa.jpg",
+    "badge": null,
+    "tag": "Made with Groundnut Oil",
+    "weights": [
+      "250 g",
+      "500 g",
+      "1 kg"
+    ],
+    "reviews": 0,
+    "description": "Crispy spicy pressed strands — a favourite Andhra namkeen.",
+    "collection": [
+      "best-sellers",
+      "savouries"
+    ],
+    "soldOut": false,
+    "oil": "groundnut"
+  },
+  {
+    "id": "biyapindi-pusa",
+    "slug": "biyapindi-pusa",
+    "name": "Biyapindi Pusa",
+    "price": 380,
+    "compareAt": null,
+    "image": "/images/products/biyapindi-pusa.jpg",
+    "badge": null,
+    "tag": "Made with Groundnut Oil",
+    "weights": [
+      "250 g",
+      "500 g",
+      "1 kg"
+    ],
+    "reviews": 0,
+    "description": "Light rice-flour pusa with aromatic spices.",
+    "collection": [
+      "best-sellers",
+      "savouries"
+    ],
+    "soldOut": false,
+    "oil": "groundnut"
+  },
+  {
+    "id": "kaara",
+    "slug": "kaara",
+    "name": "Kaara",
+    "price": 380,
+    "compareAt": null,
+    "image": "/images/products/kaara.jpg",
+    "badge": null,
+    "tag": "Made with Groundnut Oil",
+    "weights": [
+      "250 g",
+      "500 g",
+      "1 kg"
+    ],
+    "reviews": 0,
+    "description": "Spicy mixed savouries for everyday snacking.",
+    "collection": [
+      "best-sellers",
+      "savouries"
+    ],
+    "soldOut": false,
+    "oil": "groundnut"
+  },
+  {
+    "id": "harshalu",
+    "slug": "harshalu",
+    "name": "Harshalu",
+    "price": 400,
+    "compareAt": null,
+    "image": "/images/products/harshalu.jpg",
+    "badge": null,
+    "tag": "Made with Groundnut Oil",
+    "weights": [
+      "250 g",
+      "500 g",
+      "1 kg"
+    ],
+    "reviews": 0,
+    "description": "Traditional crunchy snack prepared in small batches.",
+    "collection": [
+      "best-sellers",
+      "savouries"
+    ],
+    "soldOut": false,
+    "oil": "groundnut"
+  },
+  {
+    "id": "laddu",
+    "slug": "laddu",
+    "name": "Laddu",
+    "price": 400,
+    "compareAt": null,
+    "image": "/images/products/laddu.jpg",
+    "badge": "best seller",
+    "tag": "Freshly prepared",
+    "weights": [
+      "250 g",
+      "500 g",
+      "1 kg"
+    ],
+    "reviews": 0,
+    "description": "Soft, rich traditional laddu made fresh.",
+    "collection": [
+      "best-sellers",
+      "sweets",
+      "festival"
+    ],
+    "soldOut": false,
+    "oil": "ghee"
+  },
+  {
+    "id": "palli-laddu",
+    "slug": "palli-laddu",
+    "name": "Palli Laddu",
+    "price": 380,
+    "compareAt": null,
+    "image": "/images/products/palli-laddu.jpg",
+    "badge": null,
+    "tag": "Freshly prepared",
+    "weights": [
+      "250 g",
+      "500 g",
+      "1 kg"
+    ],
+    "reviews": 0,
+    "description": "Roasted peanut laddu with jaggery sweetness.",
+    "collection": [
+      "best-sellers",
+      "sweets",
+      "healthy"
+    ],
+    "soldOut": false,
+    "oil": "ghee"
+  },
+  {
+    "id": "nuvvula-laddu",
+    "slug": "nuvvula-laddu",
+    "name": "Nuvvula Laddu",
+    "price": 380,
+    "compareAt": null,
+    "image": "/images/products/nuvvula-laddu.jpg",
+    "badge": null,
+    "tag": "Freshly prepared",
+    "weights": [
+      "250 g",
+      "500 g",
+      "1 kg"
+    ],
+    "reviews": 0,
+    "description": "Sesame (nuvvula) laddu with wholesome flavour.",
+    "collection": [
+      "best-sellers",
+      "sweets",
+      "healthy",
+      "festival"
+    ],
+    "soldOut": false,
+    "oil": "ghee"
+  },
+  {
+    "id": "karjalu",
+    "slug": "karjalu",
+    "name": "Karjalu",
+    "price": 380,
+    "compareAt": null,
+    "image": "/images/products/karjalu.jpg",
+    "badge": null,
+    "tag": "Freshly prepared",
+    "weights": [
+      "250 g",
+      "500 g",
+      "1 kg"
+    ],
+    "reviews": 0,
+    "description": "Crispy stuffed sweet dumplings, festival favourite.",
+    "collection": [
+      "best-sellers",
+      "sweets",
+      "festival"
+    ],
+    "soldOut": false,
+    "oil": "ghee"
+  },
+  {
+    "id": "badusha",
+    "slug": "badusha",
+    "name": "Badusha",
+    "price": 450,
+    "compareAt": null,
+    "image": "/images/products/badusha.jpg",
+    "badge": null,
+    "tag": "Freshly prepared",
+    "weights": [
+      "250 g",
+      "500 g",
+      "1 kg"
+    ],
+    "reviews": 0,
+    "description": "Flaky, syrup-soaked Badusha with a soft centre.",
+    "collection": [
+      "best-sellers",
+      "sweets",
+      "premium"
+    ],
+    "soldOut": false,
+    "oil": "ghee"
+  },
+  {
+    "id": "poha-mixture",
+    "slug": "poha-mixture",
+    "name": "Poha Mixture",
+    "price": 360,
+    "compareAt": null,
+    "image": "/images/products/poha-mixture.jpg",
+    "badge": null,
+    "tag": "Made with Groundnut Oil",
+    "weights": [
+      "250 g",
+      "500 g",
+      "1 kg"
+    ],
+    "reviews": 0,
+    "description": "Light and crispy poha mixture with nuts and spices.",
+    "collection": [
+      "best-sellers",
+      "savouries"
+    ],
+    "soldOut": false,
+    "oil": "groundnut"
+  },
+  {
+    "id": "bakshalu",
+    "slug": "bakshalu",
+    "name": "Bakshalu",
+    "price": 400,
+    "compareAt": null,
+    "image": "/images/products/bakshalu.jpg",
+    "badge": null,
+    "tag": "Freshly prepared",
+    "weights": [
+      "250 g",
+      "500 g",
+      "1 kg"
+    ],
+    "reviews": 0,
+    "description": "Sweet stuffed flatbread — soft, rich, festive.",
+    "collection": [
+      "best-sellers",
+      "sweets",
+      "festival"
+    ],
+    "soldOut": false,
+    "oil": "ghee"
+  },
+  {
+    "id": "mutton-pickle",
+    "slug": "mutton-pickle",
+    "name": "Mutton Pickle",
+    "price": 2000,
+    "compareAt": null,
+    "image": "/images/products/mutton-pickle.jpg",
+    "badge": "Premium",
+    "tag": "Traditional recipe",
+    "weights": [
+      "250 g",
+      "500 g",
+      "1 kg"
+    ],
+    "reviews": 0,
+    "description": "Spicy traditional mutton pickle, bold and aromatic.",
+    "collection": [
+      "best-sellers",
+      "pickles",
+      "premium"
+    ],
+    "soldOut": false,
+    "oil": null
+  },
+  {
+    "id": "chicken-pickle",
+    "slug": "chicken-pickle",
+    "name": "Chicken Pickle",
+    "price": 1300,
+    "compareAt": null,
+    "image": "/images/products/chicken-pickle.jpg",
+    "badge": "Premium",
+    "tag": "Traditional recipe",
+    "weights": [
+      "250 g",
+      "500 g",
+      "1 kg"
+    ],
+    "reviews": 0,
+    "description": "Home-style chicken pickle with fiery Andhra spices.",
+    "collection": [
+      "best-sellers",
+      "pickles",
+      "premium"
+    ],
+    "soldOut": false,
+    "oil": null
+  },
+  {
+    "id": "fish-pickle",
+    "slug": "fish-pickle",
+    "name": "Fish Pickle",
+    "price": 2000,
+    "compareAt": null,
+    "image": "/images/products/fish-pickle.jpg",
+    "badge": "Premium",
+    "tag": "Traditional recipe",
+    "weights": [
+      "250 g",
+      "500 g",
+      "1 kg"
+    ],
+    "reviews": 0,
+    "description": "Tangy coastal-style fish pickle.",
+    "collection": [
+      "best-sellers",
+      "pickles",
+      "premium"
+    ],
+    "soldOut": false,
+    "oil": null
+  },
+  {
+    "id": "prawns-pickle",
+    "slug": "prawns-pickle",
+    "name": "Prawns Pickle",
+    "price": 2000,
+    "compareAt": null,
+    "image": "/images/products/prawns-pickle.jpg",
+    "badge": "Premium",
+    "tag": "Traditional recipe",
+    "weights": [
+      "250 g",
+      "500 g",
+      "1 kg"
+    ],
+    "reviews": 0,
+    "description": "Spicy prawns pickle packed with flavour.",
+    "collection": [
+      "best-sellers",
+      "pickles",
+      "premium"
+    ],
+    "soldOut": false,
+    "oil": null
+  },
+  {
+    "id": "minapa-laddu",
+    "slug": "minapa-laddu",
+    "name": "Minapa Laddu",
+    "price": 600,
+    "compareAt": null,
+    "image": "/images/products/minapa-laddu.jpg",
+    "badge": null,
+    "tag": "Freshly prepared",
+    "weights": [
+      "250 g",
+      "500 g",
+      "1 kg"
+    ],
+    "reviews": 0,
+    "description": "Urad dal (minapa) laddu — protein-rich and fragrant.",
+    "collection": [
+      "best-sellers",
+      "sweets",
+      "healthy"
+    ],
+    "soldOut": false,
+    "oil": "ghee"
+  },
+  {
+    "id": "pesara-laddu",
+    "slug": "pesara-laddu",
+    "name": "Pesara Laddu",
+    "price": 600,
+    "compareAt": null,
+    "image": "/images/products/pesara-laddu.jpg",
+    "badge": null,
+    "tag": "Freshly prepared",
+    "weights": [
+      "250 g",
+      "500 g",
+      "1 kg"
+    ],
+    "reviews": 0,
+    "description": "Moong dal (pesara) laddu with traditional taste.",
+    "collection": [
+      "best-sellers",
+      "sweets",
+      "healthy"
+    ],
+    "soldOut": false,
+    "oil": "ghee"
+  },
+  {
+    "id": "bellam-gavvalu",
+    "slug": "bellam-gavvalu",
+    "name": "Bellam Gavvalu",
+    "price": 380,
+    "compareAt": null,
+    "image": "/images/products/bellam-gavvalu.jpg",
+    "badge": null,
+    "tag": "Freshly prepared",
+    "weights": [
+      "250 g",
+      "500 g",
+      "1 kg"
+    ],
+    "reviews": 0,
+    "description": "Shell-shaped sweets coated in jaggery (bellam).",
+    "collection": [
+      "best-sellers",
+      "sweets",
+      "festival"
+    ],
+    "soldOut": false,
+    "oil": "ghee"
+  },
+  {
+    "id": "pacchimiram-sakinalu",
+    "slug": "pacchimiram-sakinalu",
+    "name": "Pacchimiram Sakinalu",
+    "price": 400,
+    "compareAt": null,
+    "image": "/images/products/pacchimiram-sakinalu.jpg",
+    "badge": null,
+    "tag": "Made with Groundnut Oil",
+    "weights": [
+      "250 g",
+      "500 g",
+      "1 kg"
+    ],
+    "reviews": 0,
+    "description": "Green-chilli (pacchi miram) sakinalu with a spicy kick.",
+    "collection": [
+      "best-sellers",
+      "savouries",
+      "festival"
+    ],
+    "soldOut": false,
+    "oil": "groundnut"
+  },
+  {
+    "id": "dry-fruit-laddu",
+    "slug": "dry-fruit-laddu",
+    "name": "Dry Fruit Laddu",
+    "price": 1500,
+    "compareAt": null,
+    "image": "/images/products/dry-fruit-laddu.jpg",
+    "badge": "Premium",
+    "tag": "Freshly prepared",
+    "weights": [
+      "250 g",
+      "500 g",
+      "1 kg"
+    ],
+    "reviews": 0,
+    "description": "Premium laddu loaded with dry fruits and nuts.",
+    "collection": [
+      "best-sellers",
+      "sweets",
+      "premium"
+    ],
+    "soldOut": false,
+    "oil": "ghee"
+  },
+  {
+    "id": "flax-seed-laddu",
+    "slug": "flax-seed-laddu",
+    "name": "Flax Seed Laddu",
+    "price": 600,
+    "compareAt": null,
+    "image": "/images/products/flax-seed-laddu.jpg",
+    "badge": null,
+    "tag": "Freshly prepared",
+    "weights": [
+      "250 g",
+      "500 g",
+      "1 kg"
+    ],
+    "reviews": 0,
+    "description": "Nutritious flax-seed laddu for a wholesome treat.",
+    "collection": [
+      "best-sellers",
+      "sweets",
+      "healthy"
+    ],
+    "soldOut": false,
+    "oil": "ghee"
+  },
+  {
+    "id": "ragi-laddu",
+    "slug": "ragi-laddu",
+    "name": "Ragi Laddu",
+    "price": 600,
+    "compareAt": null,
+    "image": "/images/products/ragi-laddu.jpg",
+    "badge": null,
+    "tag": "Freshly prepared",
+    "weights": [
+      "250 g",
+      "500 g",
+      "1 kg"
+    ],
+    "reviews": 0,
+    "description": "Finger-millet (ragi) laddu — earthy and nourishing.",
+    "collection": [
+      "best-sellers",
+      "sweets",
+      "healthy"
+    ],
+    "soldOut": false,
+    "oil": "ghee"
+  },
+  {
+    "id": "ragi-muruku",
+    "slug": "ragi-muruku",
+    "name": "Ragi Muruku",
+    "price": 400,
+    "compareAt": null,
+    "image": "/images/products/ragi-muruku.jpg",
+    "badge": null,
+    "tag": "Made with Groundnut Oil",
+    "weights": [
+      "250 g",
+      "500 g",
+      "1 kg"
+    ],
+    "reviews": 0,
+    "description": "Crunchy muruku made with ragi flour.",
+    "collection": [
+      "best-sellers",
+      "savouries",
+      "healthy"
+    ],
+    "soldOut": false,
+    "oil": "groundnut"
+  },
+  {
+    "id": "ravva-laddu",
+    "slug": "ravva-laddu",
+    "name": "Ravva Laddu",
+    "price": 400,
+    "compareAt": null,
+    "image": "/images/products/ravva-laddu.jpg",
+    "badge": null,
+    "tag": "Freshly prepared",
+    "weights": [
+      "250 g",
+      "500 g",
+      "1 kg"
+    ],
+    "reviews": 0,
+    "description": "Classic rava (semolina) laddu with ghee aroma.",
+    "collection": [
+      "best-sellers",
+      "sweets"
+    ],
+    "soldOut": false,
+    "oil": "ghee"
+  }
+]

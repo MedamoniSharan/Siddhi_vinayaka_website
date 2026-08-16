@@ -1,0 +1,82 @@
+.page {
+  background: var(--color-surface-base);
+}
+
+.body {
+  max-width: 60ch;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  line-height: var(--font-line-height-snug);
+}
+
+.link {
+  display: inline-flex;
+  min-height: var(--touch-min);
+  align-items: center;
+  color: var(--color-brand);
+  font-weight: var(--font-weight-semibold);
+  text-decoration: underline;
+}
+
+.list {
+  list-style: none;
+  margin: 0 0 var(--space-32);
+  padding: 0;
+  display: grid;
+  gap: var(--space-8);
+  font-size: var(--font-size-sm);
+}
+
+.list a {
+  color: var(--color-brand);
+  text-decoration: underline;
+}
+
+.form {
+  display: grid;
+  gap: var(--space-16);
+  max-width: 480px;
+}
+
+.form label {
+  display: grid;
+  gap: var(--space-6);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+}
+
+.form input,
+.form textarea {
+  min-height: var(--touch-min);
+  padding: var(--space-8) var(--space-12);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  font: inherit;
+  font-weight: var(--font-weight-base);
+}
+
+.form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form button {
+  min-height: var(--touch-min);
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: var(--color-brand);
+  color: var(--color-text-inverse);
+  font-weight: var(--font-weight-semibold);
+  cursor: pointer;
+}
+
+.form button:hover {
+  background: var(--color-brand-soft);
+}
+
+.note {
+  margin: 0;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  font-weight: var(--font-weight-base);
+}
