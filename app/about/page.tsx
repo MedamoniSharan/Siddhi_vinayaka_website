@@ -1,5 +1,6 @@
 import { BrandPillars } from "@/components/home/BrandPillars";
 import { StoreLocator } from "@/components/home/StoreLocator";
+import { SweetTraditions } from "@/components/home/SweetTraditions";
 import styles from "../page-shell.module.css";
 
 export default function AboutPage() {
@@ -16,6 +17,7 @@ export default function AboutPage() {
           </p>
         </div>
       </div>
+      <SweetTraditions />
       <BrandPillars />
       <StoreLocator />
     </>

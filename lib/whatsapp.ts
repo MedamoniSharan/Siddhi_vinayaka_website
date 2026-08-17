@@ -4,6 +4,30 @@ import type { CartItem, Product } from "@/lib/types";
 export const WHATSAPP_PHONE = "919948647319";
 export const WHATSAPP_DISPLAY = "+91 99486 47319";
 
+export function buildContactMessage(fields: {
+  name?: string;
+  email?: string;
+  phone?: string;
+  subject?: string;
+  message: string;
+}) {
+  const lines = [
+    "Hello Siddhi Vinayaka Home Foods,",
+    "",
+    "I would like to get in touch:",
+    "",
+  ];
+
+  if (fields.name?.trim()) lines.push(`Name: ${fields.name.trim()}`);
+  if (fields.email?.trim()) lines.push(`Email: ${fields.email.trim()}`);
+  if (fields.phone?.trim()) lines.push(`Phone: ${fields.phone.trim()}`);
+  if (fields.subject?.trim()) lines.push(`Subject: ${fields.subject.trim()}`);
+
+  lines.push("", "Message:", fields.message.trim(), "", "Thank you!");
+
+  return lines.join("\n");
+}
+
 export function getWhatsAppUrl(message: string) {
   return `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(message)}`;
 }
