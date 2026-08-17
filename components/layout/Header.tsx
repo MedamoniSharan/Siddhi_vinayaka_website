@@ -20,7 +20,6 @@ const NAV = [
     ],
   },
   { label: "Gifting", href: "/gifting/" },
-  { label: "Blog", href: "/blog/" },
   { label: "Our Story", href: "/about/" },
   { label: "Contact", href: "/contact/" },
 ];

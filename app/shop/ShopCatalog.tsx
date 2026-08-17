@@ -3,23 +3,34 @@
 import { useMemo } from "react";
 import { useSearchParams } from "next/navigation";
 import { ProductCard } from "@/components/commerce/ProductCard";
-import { allProducts, getProductsByCollection } from "@/lib/catalog";
+import { allProducts, filterProducts } from "@/lib/catalog";
 import styles from "./shop.module.css";
+
+const COLLECTION_LABELS: Record<string, string> = {
+  "best-sellers": "Best Sellers",
+  sweets: "Sweets",
+  savouries: "Savouries",
+  pickles: "Pickles",
+  festival: "Festival",
+  premium: "Premium",
+  healthy: "Healthy",
+};
 
 export function ShopCatalog() {
   const searchParams = useSearchParams();
   const collection = searchParams.get("collection");
 
-  const products = useMemo(() => {
-    if (collection) return getProductsByCollection(collection);
-    return allProducts;
-  }, [collection]);
+  const products = useMemo(
+    () => filterProducts(allProducts, { collection }),
+    [collection],
+  );
 
   const title = collection
-    ? collection
+    ? (COLLECTION_LABELS[collection] ??
+      collection
         .split("-")
-        .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-        .join(" ")
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(" "))
     : "Shop All";
 
   return (

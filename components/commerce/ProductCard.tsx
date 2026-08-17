@@ -15,6 +15,7 @@ export function ProductCard({ product }: ProductCardProps) {
   const { addItem } = useCart();
   const [weight, setWeight] = useState(product.weights[0] ?? "");
   const [loading, setLoading] = useState(false);
+  const [added, setAdded] = useState(false);
   const [error, setError] = useState(false);
 
   async function handleAdd() {
@@ -24,6 +25,8 @@ export function ProductCard({ product }: ProductCardProps) {
     try {
       await new Promise((r) => setTimeout(r, 220));
       addItem(product, weight);
+      setAdded(true);
+      window.setTimeout(() => setAdded(false), 1800);
     } catch {
       setError(true);
     } finally {
@@ -31,33 +34,21 @@ export function ProductCard({ product }: ProductCardProps) {
     }
   }
 
-  const badgeLabel = product.soldOut
-    ? "Sold Out"
-    : product.badge;
+  const badgeLabel = product.soldOut ? "Sold Out" : product.badge;
+  const showBestSeller =
+    typeof badgeLabel === "string" && badgeLabel.toLowerCase().includes("best");
 
   return (
-    <article
-      className={styles.card}
-      data-sold-out={product.soldOut || undefined}
-      data-has-tag={product.tag ? "true" : undefined}
-    >
-      {product.tag ? <p className={styles.topTag}>{product.tag}</p> : null}
-
+    <article className={styles.card} data-sold-out={product.soldOut || undefined}>
       <Link href={`/product/${product.slug}/`} className={styles.mediaLink}>
         <div className={styles.media}>
+          {product.tag ? <p className={styles.topTag}>{product.tag}</p> : null}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={product.image} alt={product.name} loading="lazy" />
-          {badgeLabel ? (
-            <span
-              className={
-                product.soldOut || badgeLabel.toLowerCase().includes("sold")
-                  ? styles.badgeSold
-                  : styles.badge
-              }
-            >
-              {badgeLabel}
-            </span>
-          ) : null}
+          <div className={styles.mediaTags}>
+            {showBestSeller ? <span className={styles.badge}>Best seller</span> : null}
+          </div>
+          {product.soldOut ? <span className={styles.badgeSold}>Sold Out</span> : null}
         </div>
       </Link>
 
@@ -67,51 +58,75 @@ export function ProductCard({ product }: ProductCardProps) {
         </h3>
 
         <div className={styles.priceRow}>
-          <span className={styles.price}>{formatPrice(product.price)}</span>
+          <strong className={styles.price}>{formatPrice(product.price)}</strong>
           {product.compareAt ? (
             <span className={styles.compare}>{formatPrice(product.compareAt)}</span>
           ) : null}
         </div>
 
-        {product.weights.length > 0 ? (
-          <div
-            className={styles.weights}
-            role="group"
-            aria-label={`Select weight for ${product.name}`}
-          >
-            {product.weights.map((w) => (
-              <button
-                key={w}
-                type="button"
-                className={weight === w ? styles.weightActive : styles.weight}
-                aria-pressed={weight === w}
-                onClick={() => setWeight(w)}
-              >
-                {w}
-              </button>
-            ))}
-          </div>
-        ) : null}
+        <div className={styles.detailsRow}>
+          {product.weights.length > 0 ? (
+            <div
+              className={styles.weights}
+              role="group"
+              aria-label={`Select weight for ${product.name}`}
+            >
+              {product.weights.map((w) => (
+                <button
+                  key={w}
+                  type="button"
+                  className={weight === w ? styles.weightActive : styles.weight}
+                  aria-pressed={weight === w}
+                  onClick={() => setWeight(w)}
+                >
+                  {w}
+                </button>
+              ))}
+            </div>
+          ) : (
+            <span />
+          )}
 
-        {product.reviews > 0 ? (
-          <p className={styles.reviews}>{product.reviews} reviews</p>
-        ) : null}
+          {product.reviews > 0 ? (
+            <div className={styles.reviews} aria-label={`${product.reviews} reviews`}>
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 17.3l-6.18 3.7 1.64-7.03L2 9.24l7.19-.61L12 2l2.81 6.63 7.19.61-5.46 4.73L18.18 21z" />
+              </svg>
+              <span>({product.reviews})</span>
+            </div>
+          ) : null}
+        </div>
 
-        <button
-          type="button"
-          className={styles.addToCart}
-          disabled={product.soldOut || loading}
-          aria-busy={loading || undefined}
-          aria-invalid={error || undefined}
-          aria-label={
-            product.soldOut
-              ? `${product.name} is sold out`
-              : `Add ${product.name} ${weight} to cart`
-          }
-          onClick={handleAdd}
+        <form
+          className={styles.cartForm}
+          onSubmit={(event) => {
+            event.preventDefault();
+            void handleAdd();
+          }}
         >
-          {loading ? "Adding…" : product.soldOut ? "Sold Out" : "Add to cart"}
-        </button>
+          <button
+            type="submit"
+            className={`${styles.addToCart} ${added ? styles.added : ""}`}
+            disabled={product.soldOut || loading}
+            aria-busy={loading || undefined}
+            aria-invalid={error || undefined}
+            aria-label={
+              product.soldOut
+                ? `${product.name} is sold out`
+                : `Add ${product.name} ${weight} to cart`
+            }
+          >
+            <span>
+              {loading
+                ? "Adding..."
+                : added
+                  ? "Added to cart"
+                  : product.soldOut
+                    ? "Sold Out"
+                    : "Add to cart"}
+            </span>
+          </button>
+        </form>
 
         {error ? (
           <p className={styles.errorText} role="alert">

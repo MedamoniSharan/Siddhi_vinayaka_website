@@ -1,22 +1,24 @@
 .bar {
-  background: var(--color-promo);
-  color: var(--color-text-primary);
+  background: #f7db49;
+  color: #111111;
   overflow: hidden;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .track {
   display: flex;
-  gap: var(--space-40);
+  gap: 28px;
   width: max-content;
-  padding-block: var(--space-8);
-  animation: marquee 40s linear infinite;
+  padding-block: 4px;
+  animation: marquee 36s linear infinite;
 }
 
 .item {
   white-space: nowrap;
-  font-size: var(--font-size-xs);
+  font-size: 10px;
   font-weight: var(--font-weight-semibold);
+  line-height: 1.2;
+  letter-spacing: 0.01em;
   text-decoration: underline;
   text-underline-offset: 2px;
 }
@@ -34,13 +36,23 @@
   }
 }
 
+@media (min-width: 768px) {
+  .track {
+    padding-block: 5px;
+  }
+
+  .item {
+    font-size: 11px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .track {
     animation: none;
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-    gap: var(--space-16);
-    padding-inline: var(--space-12);
+    gap: 10px 16px;
+    padding: 6px 12px;
   }
 }

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { getWhatsAppUrl, WHATSAPP_DISPLAY } from "@/lib/whatsapp";
 import styles from "./Footer.module.css";
 
 const footerGroups = [
@@ -89,8 +90,8 @@ export function Footer() {
               <circle cx="32" cy="20" r="3" fill="currentColor" />
             </svg>
             <p>
-              We&apos;re now delivering across India, Singapore, Malaysia, Canada, USA,
-              Australia, New Zealand, United Kingdom &amp; Gulf Countries.
+              7-2-199, Opp. Surabhi Car Wash, Mankammathota, Karimnagar 505001.
+              Fresh homemade sweets, savouries &amp; pickles delivered across India.
             </p>
           </div>
         </header>
@@ -204,6 +205,22 @@ export function Footer() {
             </div>
             <div className={styles.contactDetail}>
               <div>
+                <h3>Address</h3>
+                <p>
+                  7-2-199, Opp. Surabhi Car Wash, Mankammathota, Karimnagar
+                  505001
+                </p>
+                <p>
+                  <a
+                    href="https://maps.app.goo.gl/bjEE3ky7dcjrfG8w6?g_st=iw"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View on Google Maps
+                  </a>
+                </p>
+              </div>
+              <div>
                 <h3>Email</h3>
                 <p>
                   <a href="mailto:siddhivinayakaofficial@gmail.com">
@@ -215,7 +232,15 @@ export function Footer() {
                 <h3>Contact</h3>
                 <p>
                   Phone/Whatsapp:{" "}
-                  <a href="tel:+919948647319">+91 99486 47319</a>
+                  <a
+                    href={getWhatsAppUrl(
+                      "Hello Siddhi Vinayaka Home Foods, I would like to get in touch.",
+                    )}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {WHATSAPP_DISPLAY}
+                  </a>
                 </p>
               </div>
             </div>

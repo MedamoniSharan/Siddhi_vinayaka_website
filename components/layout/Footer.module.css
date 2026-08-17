@@ -1,5 +1,5 @@
 .footer {
-  margin-top: var(--space-40);
+  margin-top: var(--space-48);
   background:
     linear-gradient(180deg, #f7f1e8 0%, #f0e6d8 48%, #ebe0d0 100%);
   border-top: 1px solid var(--color-border-subtle);
@@ -8,47 +8,54 @@
 
 .shell {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1280px;
   margin-inline: auto;
-  padding: var(--space-48) var(--page-gutter) var(--space-40);
+  padding: clamp(56px, 8vw, 80px) var(--page-gutter) clamp(48px, 6vw, 72px);
 }
 
 .intro {
   display: grid;
-  gap: var(--space-24);
+  gap: var(--space-32);
   align-items: center;
 }
 
 @media (min-width: 768px) {
   .intro {
-    grid-template-columns: minmax(180px, 240px) 1fr;
-    gap: var(--space-40);
+    grid-template-columns: minmax(220px, 300px) 1fr;
+    gap: var(--space-48);
   }
 }
 
 .brandMark {
   display: inline-flex;
   align-items: center;
-  gap: var(--space-12);
+  gap: var(--space-16);
   width: fit-content;
 }
 
 .brandLogo {
-  width: 72px;
-  height: 72px;
+  width: 96px;
+  height: 96px;
   object-fit: contain;
   border-radius: var(--radius-full);
   flex-shrink: 0;
 }
 
+@media (min-width: 768px) {
+  .brandLogo {
+    width: 112px;
+    height: 112px;
+  }
+}
+
 .brandText {
   display: grid;
-  gap: 2px;
+  gap: 4px;
 }
 
 .brandScript {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.35rem, 2.4vw, 1.75rem);
+  font-size: clamp(1.5rem, 2.8vw, 2rem);
   font-weight: var(--font-weight-bold);
   line-height: 1.1;
   color: var(--color-trust);
@@ -56,7 +63,7 @@
 }
 
 .brandSubtitle {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: var(--font-weight-semibold);
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -66,13 +73,13 @@
 .deliveryNote {
   display: flex;
   align-items: flex-start;
-  gap: var(--space-12);
-  max-width: 52ch;
+  gap: var(--space-16);
+  max-width: 56ch;
 }
 
 .deliveryIcon {
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   flex-shrink: 0;
   color: var(--color-trust);
   margin-top: 2px;
@@ -80,16 +87,16 @@
 
 .deliveryNote p {
   margin: 0;
-  font-size: var(--font-size-sm);
-  line-height: 1.55;
+  font-size: var(--font-size-md);
+  line-height: 1.6;
   color: var(--color-text-secondary);
 }
 
 .divider {
   display: flex;
   align-items: center;
-  gap: var(--space-12);
-  margin-block: var(--space-32);
+  gap: var(--space-16);
+  margin-block: var(--space-48);
   color: var(--color-brand);
 }
 
@@ -107,27 +114,27 @@
 }
 
 .dividerDiamond {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1;
   opacity: 0.85;
 }
 
 .main {
   display: grid;
-  gap: var(--space-32);
+  gap: var(--space-40);
 }
 
 @media (min-width: 960px) {
   .main {
-    grid-template-columns: minmax(0, 1fr) minmax(260px, 320px);
-    gap: var(--space-48);
+    grid-template-columns: minmax(0, 1fr) minmax(300px, 380px);
+    gap: var(--space-64);
     align-items: start;
   }
 }
 
 .linksArea {
   display: grid;
-  gap: var(--space-24);
+  gap: var(--space-32);
 }
 
 .navigation {
@@ -138,7 +145,7 @@
 @media (min-width: 768px) {
   .navigation {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: var(--space-24);
+    gap: var(--space-32);
   }
 }
 
@@ -159,11 +166,11 @@
   justify-content: space-between;
   gap: var(--space-12);
   min-height: var(--touch-min);
-  padding: var(--space-12) 0;
+  padding: var(--space-16) 0;
   border: 0;
   background: transparent;
   color: var(--color-trust);
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-md);
   font-weight: var(--font-weight-bold);
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -175,7 +182,7 @@
   .groupHeading {
     pointer-events: none;
     min-height: auto;
-    padding: 0 0 var(--space-12);
+    padding: 0 0 var(--space-16);
     cursor: default;
   }
 }
@@ -198,9 +205,9 @@
 .groupList {
   list-style: none;
   margin: 0;
-  padding: 0 0 var(--space-12);
+  padding: 0 0 var(--space-16);
   display: none;
-  gap: var(--space-8);
+  gap: var(--space-10);
 }
 
 .isOpen .groupList {
@@ -217,10 +224,10 @@
 .groupList a {
   display: inline-flex;
   align-items: center;
-  min-height: 32px;
-  font-size: var(--font-size-sm);
+  min-height: 40px;
+  font-size: var(--font-size-md);
   color: var(--color-text-secondary);
-  line-height: 1.4;
+  line-height: 1.45;
 }
 
 .groupList a:hover {
@@ -228,8 +235,8 @@
 }
 
 .socialRow h2 {
-  margin: 0 0 var(--space-12);
-  font-size: var(--font-size-sm);
+  margin: 0 0 var(--space-16);
+  font-size: var(--font-size-md);
   font-weight: var(--font-weight-bold);
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -239,12 +246,12 @@
 .socialIcons {
   display: flex;
   align-items: center;
-  gap: var(--space-12);
+  gap: var(--space-16);
 }
 
 .socialIcons a {
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -264,16 +271,16 @@
 }
 
 .contactCard {
-  padding: var(--space-24);
+  padding: var(--space-32);
   background: rgba(255, 253, 249, 0.72);
   border: 1px solid rgba(122, 46, 18, 0.16);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-xl);
   box-shadow: var(--shadow-card);
 }
 
 .contactCard h2 {
   margin: 0;
-  font-size: var(--font-size-lg);
+  font-size: clamp(var(--font-size-lg), 2.2vw, var(--font-size-2xl));
   font-weight: var(--font-weight-bold);
   line-height: var(--font-line-height-snug);
   color: var(--color-trust);
@@ -283,10 +290,10 @@
 .cardRule {
   display: flex;
   align-items: center;
-  gap: var(--space-8);
-  margin-block: var(--space-16);
+  gap: var(--space-10);
+  margin-block: var(--space-20);
   color: var(--color-brand);
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .cardRule::before,
@@ -299,12 +306,12 @@
 
 .contactDetail {
   display: grid;
-  gap: var(--space-20);
+  gap: var(--space-24);
 }
 
 .contactDetail h3 {
-  margin: 0 0 var(--space-6);
-  font-size: 11px;
+  margin: 0 0 var(--space-8);
+  font-size: 12px;
   font-weight: var(--font-weight-bold);
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -313,9 +320,9 @@
 
 .contactDetail p {
   margin: 0;
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-md);
   color: var(--color-text-secondary);
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
 .contactDetail a:hover {
@@ -325,14 +332,14 @@
 
 .bottom {
   border-top: 1px solid rgba(122, 46, 18, 0.14);
-  padding: var(--space-16) var(--page-gutter);
+  padding: var(--space-24) var(--page-gutter);
   text-align: center;
   background: rgba(122, 46, 18, 0.04);
 }
 
 .bottom p {
   margin: 0;
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-sm);
   color: var(--color-text-muted);
 }
 

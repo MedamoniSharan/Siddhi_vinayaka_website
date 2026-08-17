@@ -16,7 +16,9 @@ export function ProductRail({
   products,
   viewAllHref = "/shop/",
 }: ProductRailProps) {
-  if (!products.length) {
+  const featured = products.slice(0, 4);
+
+  if (!featured.length) {
     return (
       <section className={styles.section}>
         <div className="container">
@@ -33,14 +35,16 @@ export function ProductRail({
         <div className={styles.header}>
           <h2 className="section-title">{title}</h2>
           {subtitle ? <p className="section-subtitle">{subtitle}</p> : null}
-          <Link href={viewAllHref} className={styles.viewAll}>
-            View All
-          </Link>
         </div>
-        <div className={styles.rail} tabIndex={0} aria-label={`${title} products`}>
-          {products.map((product) => (
+        <div className={styles.rail} aria-label={`${title} products`}>
+          {featured.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
+        </div>
+        <div className={styles.actions}>
+          <Link href={viewAllHref} className={styles.pixelCornerButton}>
+            <span>View All</span>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,23 +1,11 @@
 [
   {
-    "id": "hyderabad",
-    "name": "HYDERABAD \u2014 MAIN",
-    "address": "Sidhi Vinayaka Sweets & Snacks, Hyderabad, Telangana",
+    "id": "karimnagar",
+    "name": "KARIMNAGAR",
+    "address": "7-2-199, Opp. Surabhi Car Wash, Mankammathota, Karimnagar 505001",
     "phone": "+91 99486 47319",
-    "hours": "8:00AM to 9:30PM"
-  },
-  {
-    "id": "secunderabad",
-    "name": "SECUNDERABAD",
-    "address": "Sidhi Vinayaka Sweets & Snacks, Secunderabad, Telangana",
-    "phone": "+91 99486 47319",
-    "hours": "8:00AM to 9:30PM"
-  },
-  {
-    "id": "warangal",
-    "name": "WARANGAL",
-    "address": "Sidhi Vinayaka Sweets & Snacks, Warangal, Telangana",
-    "phone": "+91 99486 47319",
-    "hours": "8:00AM to 9:30PM"
+    "hours": "8:00AM to 9:30PM",
+    "mapUrl": "https://maps.app.goo.gl/bjEE3ky7dcjrfG8w6?g_st=iw",
+    "mapEmbedUrl": "https://www.google.com/maps?q=18.437687,79.110512&hl=en&z=16&output=embed"
   }
 ]

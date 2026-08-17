@@ -29,6 +29,8 @@ export type Store = {
   address: string;
   phone: string;
   hours: string;
+  mapUrl: string;
+  mapEmbedUrl: string;
 };
 
 export type Testimonial = {

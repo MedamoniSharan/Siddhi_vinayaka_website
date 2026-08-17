@@ -3,7 +3,6 @@ import { HeroCarousel } from "@/components/home/HeroCarousel";
 import { Testimonials } from "@/components/home/Testimonials";
 import { SweetTraditions } from "@/components/home/SweetTraditions";
 import { StoreLocator } from "@/components/home/StoreLocator";
-import { BlogTeasers } from "@/components/home/BlogTeasers";
 import { GiftingBanner } from "@/components/home/GiftingBanner";
 import { ProductRail } from "@/components/commerce/ProductRail";
 import { TrustStrip } from "@/components/layout/TrustStrip";
@@ -18,9 +17,9 @@ export default function HomePage() {
 
   return (
     <>
-      <CategoryGrid />
       <TrustStrip />
       <HeroCarousel />
+      <CategoryGrid />
       <ProductRail
         title="Our Best Sellers"
         subtitle={`${allProducts.length} traditional favourites — sweets, snacks & pickles.`}
@@ -55,7 +54,6 @@ export default function HomePage() {
       <Testimonials />
       <SweetTraditions />
       <StoreLocator />
-      <BlogTeasers />
     </>
   );
 }

@@ -80,3 +80,85 @@
   color: var(--color-error);
   font-size: var(--font-size-sm);
 }
+
+.cartForm {
+  width: 100%;
+  margin-top: var(--space-8);
+}
+
+.addToCart {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  width: 100%;
+  min-height: 52px;
+  border: 0;
+  background: #f7db49;
+  color: #111111;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.1;
+  transition: background 0.2s, transform 0.2s;
+  clip-path: polygon(
+    0 6px,
+    6px 6px,
+    6px 0,
+    calc(100% - 6px) 0,
+    calc(100% - 6px) 6px,
+    100% 6px,
+    100% calc(100% - 6px),
+    calc(100% - 6px) calc(100% - 6px),
+    calc(100% - 6px) 100%,
+    6px 100%,
+    6px calc(100% - 6px),
+    0 calc(100% - 6px)
+  );
+}
+
+.addToCart:hover:not(:disabled) {
+  background: #eacb32;
+  transform: translateY(-2px);
+}
+
+.added {
+  background: #006452;
+  color: #ffffff;
+}
+
+.addToCart:disabled {
+  background: #d0d0d0;
+  color: #757575;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  min-height: 48px;
+  margin-top: var(--space-12);
+  padding: 0 var(--space-16);
+  border: 0;
+  background: #25d366;
+  color: #ffffff;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  text-decoration: none;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.whatsapp:hover:not(:disabled) {
+  background: #1ebe57;
+}
+
+.whatsapp:disabled {
+  background: var(--color-surface-muted);
+  color: var(--color-text-muted);
+  cursor: not-allowed;
+}

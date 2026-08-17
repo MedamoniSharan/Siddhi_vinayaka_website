@@ -1,9 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useId, useRef } from "react";
+import { useEffect, useId, useMemo, useRef } from "react";
 import { useCart } from "@/components/commerce/CartProvider";
+import { WhatsAppOrderButton } from "@/components/commerce/WhatsAppOrderButton";
+import { WhatsAppIcon } from "@/components/icons/CommerceIcons";
 import { formatPrice } from "@/lib/catalog";
+import { buildCartOrderMessage, getWhatsAppUrl } from "@/lib/whatsapp";
 import styles from "./CartDrawer.module.css";
 
 export function CartDrawer() {
@@ -34,6 +37,14 @@ export function CartDrawer() {
       previouslyFocused.current?.focus?.();
     };
   }, [isOpen, closeCart]);
+
+  const whatsappUrl = useMemo(() => {
+    if (items.length === 0) return "";
+    const origin =
+      typeof window !== "undefined" ? window.location.origin : undefined;
+    const message = buildCartOrderMessage(items, subtotal, { origin });
+    return getWhatsAppUrl(message);
+  }, [items, subtotal]);
 
   if (!isOpen) return null;
 
@@ -161,15 +172,14 @@ export function CartDrawer() {
             <span>Subtotal</span>
             <strong>{formatPrice(subtotal)}</strong>
           </div>
-          <button type="button" className={styles.buyNow} disabled>
-            BUY NOW
-          </button>
-          {items.length > 0 ? (
-            <button type="button" className={styles.checkout} disabled>
-              Checkout
-            </button>
-          ) : null}
-          <p className={styles.comingSoon}>Checkout coming soon</p>
+          <WhatsAppOrderButton
+            href={whatsappUrl}
+            className={styles.buyNow}
+            disabled={items.length === 0}
+            ariaLabel="Order cart items on WhatsApp"
+          >
+            <WhatsAppIcon size={26} />
+          </WhatsAppOrderButton>
         </footer>
       </aside>
     </div>

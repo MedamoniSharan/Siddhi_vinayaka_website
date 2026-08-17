@@ -20,11 +20,17 @@ const ITEMS = [
 ];
 
 export function TrustStrip() {
+  const loop = [...ITEMS, ...ITEMS];
+
   return (
     <div className={styles.strip} role="region" aria-label="Store promises">
-      <ul className={styles.list}>
-        {ITEMS.map((item) => (
-          <li key={item.label} className={styles.item}>
+      <div className={styles.track}>
+        {loop.map((item, index) => (
+          <div
+            key={`${item.label}-${index}`}
+            className={styles.item}
+            aria-hidden={index >= ITEMS.length ? true : undefined}
+          >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               className={styles.icon}
@@ -35,9 +41,9 @@ export function TrustStrip() {
               aria-hidden
             />
             <span>{item.label}</span>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }

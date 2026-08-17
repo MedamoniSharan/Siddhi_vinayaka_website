@@ -282,31 +282,25 @@
   border-radius: 0;
   font-size: 16px;
   font-weight: 600;
-  cursor: not-allowed;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .buyNow {
   background: #006452;
   color: #ffffff;
   padding: 18px 24px;
-}
-
-.checkout {
-  background: #f7db49;
-  color: #111111;
-  padding: 14px 24px;
+  cursor: pointer;
 }
 
 .buyNow:disabled,
 .checkout:disabled {
   opacity: 0.92;
-}
-
-.comingSoon {
-  margin: 0;
-  text-align: center;
-  font-size: 12px;
-  color: rgba(17, 17, 17, 0.55);
+  cursor: not-allowed;
 }
 
 @media (min-width: 768px) {
