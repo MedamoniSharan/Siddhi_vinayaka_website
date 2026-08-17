@@ -1,12 +1,5 @@
 [
   {
-    "id": "flash-sale",
-    "name": "Flash Sale",
-    "href": "/shop/?collection=best-sellers",
-    "image": "/images/categories/flash.svg",
-    "badge": null
-  },
-  {
     "id": "sweets",
     "name": "Sweets",
     "href": "/shop/?collection=sweets",
@@ -21,11 +14,11 @@
     "badge": null
   },
   {
-    "id": "premium",
-    "name": "Artisanal Sweets",
-    "href": "/shop/?collection=premium",
-    "image": "/images/categories/artisanal.png",
-    "badge": "Premium"
+    "id": "pickles",
+    "name": "Pickles",
+    "href": "/shop/?collection=pickles",
+    "image": "/images/categories/pickles.png",
+    "badge": null
   },
   {
     "id": "festival",
@@ -35,24 +28,10 @@
     "badge": "Traditional"
   },
   {
-    "id": "gifting",
-    "name": "Gifting",
-    "href": "/gifting/",
-    "image": "/images/categories/gifting.png",
-    "badge": null
-  },
-  {
-    "id": "pickles",
-    "name": "Pickles",
-    "href": "/shop/?collection=pickles",
-    "image": "/images/categories/podi.png",
-    "badge": null
-  },
-  {
-    "id": "healthy",
-    "name": "Newly Launched",
-    "href": "/shop/?collection=healthy",
-    "image": "/images/categories/new.png",
-    "badge": "New In"
+    "id": "premium",
+    "name": "Premium",
+    "href": "/shop/?collection=premium",
+    "image": "/images/categories/artisanal.png",
+    "badge": "Premium"
   }
 ]

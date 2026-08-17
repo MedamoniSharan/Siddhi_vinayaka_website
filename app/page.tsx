@@ -3,7 +3,6 @@ import { HeroCarousel } from "@/components/home/HeroCarousel";
 import { Testimonials } from "@/components/home/Testimonials";
 import { SweetTraditions } from "@/components/home/SweetTraditions";
 import { StoreLocator } from "@/components/home/StoreLocator";
-import { GiftingBanner } from "@/components/home/GiftingBanner";
 import { ProductRail } from "@/components/commerce/ProductRail";
 import { TrustStrip } from "@/components/layout/TrustStrip";
 import { getProductsByCollection, allProducts } from "@/lib/catalog";
@@ -44,7 +43,6 @@ export default function HomePage() {
         products={pickles}
         viewAllHref="/shop/?collection=pickles"
       />
-      <GiftingBanner />
       <ProductRail
         title="Our Master Pieces"
         subtitle="Premium picks crafted for celebrations."

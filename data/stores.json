@@ -6,6 +6,6 @@
     "phone": "+91 99486 47319",
     "hours": "8:00AM to 9:30PM",
     "mapUrl": "https://maps.app.goo.gl/bjEE3ky7dcjrfG8w6?g_st=iw",
-    "mapEmbedUrl": "https://www.google.com/maps?q=18.437687,79.110512&hl=en&z=16&output=embed"
+    "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=79.085512,18.412687,79.135512,18.462687&layer=mapnik&marker=18.437687%2C79.110512"
   }
 ]
