@@ -1,4 +1,4 @@
-import { formatPrice } from "@/lib/catalog";
+import { formatPrice, getPriceForWeight } from "@/lib/catalog";
 import type { CartItem, Product } from "@/lib/types";
 
 export const WHATSAPP_PHONE = "919948647319";
@@ -38,7 +38,8 @@ export function buildProductOrderMessage(
   options?: { quantity?: number; origin?: string },
 ) {
   const quantity = options?.quantity ?? 1;
-  const lineTotal = product.price * quantity;
+  const unitPrice = getPriceForWeight(product.price, weight);
+  const lineTotal = unitPrice * quantity;
   const productUrl = options?.origin
     ? `${options.origin}/product/${product.slug}/`
     : `/product/${product.slug}/`;
@@ -51,7 +52,7 @@ export function buildProductOrderMessage(
     `• ${product.name}`,
     `• Weight: ${weight}`,
     `• Quantity: ${quantity}`,
-    `• Price: ${formatPrice(product.price)}${quantity > 1 ? ` (Total: ${formatPrice(lineTotal)})` : ""}`,
+    `• Price: ${formatPrice(unitPrice)}${quantity > 1 ? ` (Total: ${formatPrice(lineTotal)})` : ""}`,
     "",
     `Product: ${productUrl}`,
     "",

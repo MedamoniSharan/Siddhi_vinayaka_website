@@ -27,7 +27,7 @@
 
 .sideLeft {
   justify-content: flex-start;
-  gap: var(--space-8);
+  gap: var(--space-12);
 }
 
 .sideRight {
@@ -36,10 +36,9 @@
 }
 
 .logo {
-  justify-self: center;
   display: flex;
   align-items: center;
-  z-index: 1;
+  flex-shrink: 0;
 }
 
 .logo img {
@@ -62,7 +61,9 @@
 
 @media (min-width: 960px) {
   .desktopNav {
-    display: block;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
   }
 
   .desktopNav ul {
@@ -84,6 +85,16 @@
 
   .desktopNav a:hover {
     color: var(--color-brand);
+  }
+}
+
+@media (max-width: 959px) {
+  .bar {
+    grid-template-columns: 1fr auto;
+  }
+
+  .desktopNav {
+    display: none;
   }
 }
 

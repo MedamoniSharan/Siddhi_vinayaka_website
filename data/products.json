@@ -662,5 +662,99 @@
     ],
     "soldOut": false,
     "oil": "ghee"
+  },
+  {
+    "id": "amla-pickle",
+    "slug": "amla-pickle",
+    "name": "Amla Pickle",
+    "price": 400,
+    "compareAt": null,
+    "image": "/images/products/amla-pickle.jpg",
+    "badge": null,
+    "tag": "Traditional recipe",
+    "weights": [
+      "250 g",
+      "500 g",
+      "1 kg"
+    ],
+    "reviews": 0,
+    "description": "Tangy amla (usiri) pickle simmered in spice-rich oil.",
+    "collection": [
+      "best-sellers",
+      "pickles"
+    ],
+    "soldOut": false,
+    "oil": null
+  },
+  {
+    "id": "lemon-pickle",
+    "slug": "lemon-pickle",
+    "name": "Lemon Pickle",
+    "price": 400,
+    "compareAt": null,
+    "image": "/images/products/lemon-pickle.jpg",
+    "badge": null,
+    "tag": "Traditional recipe",
+    "weights": [
+      "250 g",
+      "500 g",
+      "1 kg"
+    ],
+    "reviews": 0,
+    "description": "Zesty lemon pickle with classic Andhra spices.",
+    "collection": [
+      "best-sellers",
+      "pickles"
+    ],
+    "soldOut": false,
+    "oil": null
+  },
+  {
+    "id": "mysore-pak",
+    "slug": "mysore-pak",
+    "name": "Mysore Pak",
+    "price": 450,
+    "compareAt": null,
+    "image": "/images/products/mysore-pak.jpg",
+    "badge": null,
+    "tag": "Freshly prepared",
+    "weights": [
+      "250 g",
+      "500 g",
+      "1 kg"
+    ],
+    "reviews": 0,
+    "description": "Rich ghee Mysore pak with a soft, porous bite.",
+    "collection": [
+      "best-sellers",
+      "sweets",
+      "festival"
+    ],
+    "soldOut": false,
+    "oil": "ghee"
+  },
+  {
+    "id": "karam-sakinam",
+    "slug": "karam-sakinam",
+    "name": "Karam Sakinam",
+    "price": 400,
+    "compareAt": null,
+    "image": "/images/products/karam-sakinam.jpg",
+    "badge": null,
+    "tag": "Made with Groundnut Oil",
+    "weights": [
+      "250 g",
+      "500 g",
+      "1 kg"
+    ],
+    "reviews": 0,
+    "description": "Spicy sesame sakinalu with a bold chilli kick.",
+    "collection": [
+      "best-sellers",
+      "savouries",
+      "festival"
+    ],
+    "soldOut": false,
+    "oil": "groundnut"
   }
 ]

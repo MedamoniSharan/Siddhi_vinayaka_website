@@ -9,6 +9,7 @@ import {
   useState,
   type ReactNode,
 } from "react";
+import { getPriceForWeight } from "@/lib/catalog";
 import type { CartItem, Product } from "@/lib/types";
 
 type CartContextValue = {
@@ -68,7 +69,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
           slug: product.slug,
           name: product.name,
           image: product.image,
-          price: product.price,
+          price: getPriceForWeight(product.price, weight),
           weight,
           quantity: 1,
         },

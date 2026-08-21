@@ -46,9 +46,6 @@ export function Header() {
     };
   }, [mobileOpen]);
 
-  const leftNav = NAV.slice(0, Math.ceil(NAV.length / 2));
-  const rightNav = NAV.slice(Math.ceil(NAV.length / 2));
-
   return (
     <header className={styles.header}>
       <div className={styles.bar}>
@@ -63,33 +60,23 @@ export function Header() {
             <span className={styles.burger} aria-hidden />
           </button>
 
-          <nav className={styles.desktopNav} aria-label="Primary">
-            <ul>
-              {leftNav.map((item) => (
-                <li key={item.label}>
-                  <Link href={item.href}>{item.label}</Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
+          <Link href="/" className={styles.logo} aria-label="Siddhi Vinayka Home Foods home">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/logo.png" width={512} height={512} alt="Siddhi Vinayka Home Foods" />
+          </Link>
         </div>
 
-        <Link href="/" className={styles.logo} aria-label="Siddhi Vinayka Home Foods home">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/logo.png" width={512} height={512} alt="Siddhi Vinayka Home Foods" />
-        </Link>
+        <nav className={styles.desktopNav} aria-label="Primary">
+          <ul>
+            {NAV.map((item) => (
+              <li key={item.label}>
+                <Link href={item.href}>{item.label}</Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
 
         <div className={styles.sideRight}>
-          <nav className={styles.desktopNav} aria-label="Secondary">
-            <ul>
-              {rightNav.map((item) => (
-                <li key={item.label}>
-                  <Link href={item.href}>{item.label}</Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-
           <div className={styles.actions}>
             <button
               type="button"

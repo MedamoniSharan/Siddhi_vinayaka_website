@@ -3,7 +3,11 @@
 import Link from "next/link";
 import { useState } from "react";
 import { useCart } from "@/components/commerce/CartProvider";
-import { formatPrice } from "@/lib/catalog";
+import {
+  formatPrice,
+  getDefaultWeight,
+  getPriceForWeight,
+} from "@/lib/catalog";
 import type { Product } from "@/lib/types";
 import styles from "./ProductCard.module.css";
 
@@ -13,10 +17,14 @@ type ProductCardProps = {
 
 export function ProductCard({ product }: ProductCardProps) {
   const { addItem } = useCart();
-  const [weight, setWeight] = useState(product.weights[0] ?? "");
+  const [weight, setWeight] = useState(() => getDefaultWeight(product.weights));
   const [loading, setLoading] = useState(false);
   const [added, setAdded] = useState(false);
   const [error, setError] = useState(false);
+  const unitPrice = getPriceForWeight(product.price, weight);
+  const compareAtPrice = product.compareAt
+    ? getPriceForWeight(product.compareAt, weight)
+    : null;
 
   async function handleAdd() {
     if (product.soldOut) return;
@@ -58,9 +66,9 @@ export function ProductCard({ product }: ProductCardProps) {
         </h3>
 
         <div className={styles.priceRow}>
-          <strong className={styles.price}>{formatPrice(product.price)}</strong>
-          {product.compareAt ? (
-            <span className={styles.compare}>{formatPrice(product.compareAt)}</span>
+          <strong className={styles.price}>{formatPrice(unitPrice)}</strong>
+          {compareAtPrice ? (
+            <span className={styles.compare}>{formatPrice(compareAtPrice)}</span>
           ) : null}
         </div>
 

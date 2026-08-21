@@ -4,7 +4,11 @@ import { useMemo, useState } from "react";
 import { useCart } from "@/components/commerce/CartProvider";
 import { WhatsAppOrderButton } from "@/components/commerce/WhatsAppOrderButton";
 import { WhatsAppIcon } from "@/components/icons/CommerceIcons";
-import { formatPrice } from "@/lib/catalog";
+import {
+  formatPrice,
+  getDefaultWeight,
+  getPriceForWeight,
+} from "@/lib/catalog";
 import {
   buildProductOrderMessage,
   getWhatsAppUrl,
@@ -14,10 +18,11 @@ import styles from "./ProductDetails.module.css";
 
 export function ProductDetails({ product }: { product: Product }) {
   const { addItem } = useCart();
-  const [weight, setWeight] = useState(product.weights[0] ?? "");
+  const [weight, setWeight] = useState(() => getDefaultWeight(product.weights));
   const [loading, setLoading] = useState(false);
   const [added, setAdded] = useState(false);
   const [error, setError] = useState(false);
+  const unitPrice = getPriceForWeight(product.price, weight);
 
   async function handleAdd() {
     if (product.soldOut) return;
@@ -51,7 +56,7 @@ export function ProductDetails({ product }: { product: Product }) {
       <div className={styles.info}>
         {product.tag ? <p className={styles.tag}>{product.tag}</p> : null}
         <h1>{product.name}</h1>
-        <p className={styles.price}>{formatPrice(product.price)}</p>
+        <p className={styles.price}>{formatPrice(unitPrice)}</p>
         <p className={styles.description}>{product.description}</p>
         <div className={styles.weights} role="group" aria-label="Select weight">
           {product.weights.map((w) => (

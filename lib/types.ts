@@ -2,6 +2,7 @@ export type Product = {
   id: string;
   slug: string;
   name: string;
+  /** Price for 1 kg; pack prices scale by selected weight. */
   price: number;
   compareAt: number | null;
   image: string;

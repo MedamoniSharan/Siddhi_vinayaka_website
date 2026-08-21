@@ -55,3 +55,24 @@ export function filterProducts(
 export function formatPrice(amount: number) {
   return `₹${amount.toLocaleString("en-IN")}`;
 }
+
+/** Parse pack labels like "250 g", "500 g", "1 kg" into kilograms. */
+export function parseWeightToKg(weight: string): number {
+  const match = weight.trim().toLowerCase().match(/^([\d.]+)\s*(kg|g)$/);
+  if (!match) return 1;
+  const value = Number(match[1]);
+  if (!Number.isFinite(value) || value <= 0) return 1;
+  return match[2] === "kg" ? value : value / 1000;
+}
+
+/** `product.price` is the 1 kg rate; scale by selected pack size. */
+export function getPriceForWeight(basePricePerKg: number, weight: string): number {
+  const raw = basePricePerKg * parseWeightToKg(weight);
+  // Preserve paisa when needed (e.g. Badusha 250 g = ₹112.50)
+  return Math.round(raw * 100) / 100;
+}
+
+export function getDefaultWeight(weights: string[]): string {
+  const oneKg = weights.find((w) => parseWeightToKg(w) === 1);
+  return oneKg ?? weights[0] ?? "";
+}
