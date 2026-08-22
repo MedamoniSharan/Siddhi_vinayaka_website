@@ -13,6 +13,7 @@ export default function HomePage() {
   const sweets = getProductsByCollection("sweets");
   const pickles = getProductsByCollection("pickles");
   const premium = getProductsByCollection("premium");
+  const pelliSaree = getProductsByCollection("pelli-saree");
 
   return (
     <>
@@ -48,6 +49,12 @@ export default function HomePage() {
         subtitle="Premium picks crafted for celebrations."
         products={premium}
         viewAllHref="/shop/?collection=premium"
+      />
+      <ProductRail
+        title="Pelli Saree"
+        subtitle="Traditional wedding sweets and savouries for pelli saare gifting."
+        products={pelliSaree}
+        viewAllHref="/shop/?collection=pelli-saree"
       />
       <Testimonials />
       <SweetTraditions />

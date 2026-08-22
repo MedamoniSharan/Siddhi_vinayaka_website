@@ -18,7 +18,8 @@
     "collection": [
       "best-sellers",
       "savouries",
-      "festival"
+      "festival",
+      "pelli-saree"
     ],
     "soldOut": false,
     "oil": "groundnut"
@@ -41,7 +42,8 @@
     "description": "Crispy deep-fried lentil fritters, golden and savoury.",
     "collection": [
       "best-sellers",
-      "savouries"
+      "savouries",
+      "pelli-saree"
     ],
     "soldOut": false,
     "oil": "groundnut"
@@ -64,7 +66,8 @@
     "description": "Classic crunchy rice-flour muruku, freshly prepared.",
     "collection": [
       "best-sellers",
-      "savouries"
+      "savouries",
+      "pelli-saree"
     ],
     "soldOut": false,
     "oil": "groundnut"
@@ -87,7 +90,8 @@
     "description": "Ring-shaped spicy rice-flour snack from Telangana.",
     "collection": [
       "best-sellers",
-      "savouries"
+      "savouries",
+      "pelli-saree"
     ],
     "soldOut": false,
     "oil": "groundnut"
@@ -110,7 +114,8 @@
     "description": "Crispy spicy pressed strands — a favourite Andhra namkeen.",
     "collection": [
       "best-sellers",
-      "savouries"
+      "savouries",
+      "pelli-saree"
     ],
     "soldOut": false,
     "oil": "groundnut"
@@ -133,7 +138,8 @@
     "description": "Light rice-flour pusa with aromatic spices.",
     "collection": [
       "best-sellers",
-      "savouries"
+      "savouries",
+      "pelli-saree"
     ],
     "soldOut": false,
     "oil": "groundnut"
@@ -156,7 +162,8 @@
     "description": "Spicy mixed savouries for everyday snacking.",
     "collection": [
       "best-sellers",
-      "savouries"
+      "savouries",
+      "pelli-saree"
     ],
     "soldOut": false,
     "oil": "groundnut"
@@ -179,7 +186,8 @@
     "description": "Traditional crunchy snack prepared in small batches.",
     "collection": [
       "best-sellers",
-      "savouries"
+      "savouries",
+      "pelli-saree"
     ],
     "soldOut": false,
     "oil": "groundnut"
@@ -203,7 +211,8 @@
     "collection": [
       "best-sellers",
       "sweets",
-      "festival"
+      "festival",
+      "pelli-saree"
     ],
     "soldOut": false,
     "oil": "ghee"
@@ -227,7 +236,8 @@
     "collection": [
       "best-sellers",
       "sweets",
-      "healthy"
+      "healthy",
+      "pelli-saree"
     ],
     "soldOut": false,
     "oil": "ghee"
@@ -276,7 +286,8 @@
     "collection": [
       "best-sellers",
       "sweets",
-      "festival"
+      "festival",
+      "pelli-saree"
     ],
     "soldOut": false,
     "oil": "ghee"
@@ -300,7 +311,8 @@
     "collection": [
       "best-sellers",
       "sweets",
-      "premium"
+      "premium",
+      "pelli-saree"
     ],
     "soldOut": false,
     "oil": "ghee"
@@ -323,7 +335,8 @@
     "description": "Light and crispy poha mixture with nuts and spices.",
     "collection": [
       "best-sellers",
-      "savouries"
+      "savouries",
+      "pelli-saree"
     ],
     "soldOut": false,
     "oil": "groundnut"
@@ -347,7 +360,8 @@
     "collection": [
       "best-sellers",
       "sweets",
-      "festival"
+      "festival",
+      "pelli-saree"
     ],
     "soldOut": false,
     "oil": "ghee"
@@ -467,7 +481,8 @@
     "collection": [
       "best-sellers",
       "sweets",
-      "healthy"
+      "healthy",
+      "pelli-saree"
     ],
     "soldOut": false,
     "oil": "ghee"
@@ -491,7 +506,8 @@
     "collection": [
       "best-sellers",
       "sweets",
-      "healthy"
+      "healthy",
+      "pelli-saree"
     ],
     "soldOut": false,
     "oil": "ghee"
@@ -515,7 +531,8 @@
     "collection": [
       "best-sellers",
       "sweets",
-      "festival"
+      "festival",
+      "pelli-saree"
     ],
     "soldOut": false,
     "oil": "ghee"
@@ -539,7 +556,8 @@
     "collection": [
       "best-sellers",
       "savouries",
-      "festival"
+      "festival",
+      "pelli-saree"
     ],
     "soldOut": false,
     "oil": "groundnut"
@@ -563,7 +581,8 @@
     "collection": [
       "best-sellers",
       "sweets",
-      "premium"
+      "premium",
+      "pelli-saree"
     ],
     "soldOut": false,
     "oil": "ghee"
@@ -587,7 +606,8 @@
     "collection": [
       "best-sellers",
       "sweets",
-      "healthy"
+      "healthy",
+      "pelli-saree"
     ],
     "soldOut": false,
     "oil": "ghee"
@@ -611,7 +631,8 @@
     "collection": [
       "best-sellers",
       "sweets",
-      "healthy"
+      "healthy",
+      "pelli-saree"
     ],
     "soldOut": false,
     "oil": "ghee"
@@ -658,7 +679,8 @@
     "description": "Classic rava (semolina) laddu with ghee aroma.",
     "collection": [
       "best-sellers",
-      "sweets"
+      "sweets",
+      "pelli-saree"
     ],
     "soldOut": false,
     "oil": "ghee"
@@ -728,7 +750,8 @@
     "collection": [
       "best-sellers",
       "sweets",
-      "festival"
+      "festival",
+      "pelli-saree"
     ],
     "soldOut": false,
     "oil": "ghee"
@@ -752,9 +775,104 @@
     "collection": [
       "best-sellers",
       "savouries",
-      "festival"
+      "festival",
+      "pelli-saree"
     ],
     "soldOut": false,
     "oil": "groundnut"
+  },
+  {
+    "id": "pelli-saree-sweet-box",
+    "slug": "pelli-saree-sweet-box",
+    "name": "Pelli Saree Sweet Box",
+    "price": 900,
+    "compareAt": null,
+    "image": "/images/categories/gifting.png",
+    "badge": "Wedding",
+    "tag": "Curated for gifting",
+    "weights": [
+      "1 kg",
+      "2 kg",
+      "5 kg"
+    ],
+    "reviews": 0,
+    "description": "Assorted wedding sweets — laddu, badusha, mysore pak, bakshalu and more, arranged for pelli saare.",
+    "collection": [
+      "pelli-saree",
+      "sweets"
+    ],
+    "soldOut": false,
+    "oil": "ghee"
+  },
+  {
+    "id": "pelli-saree-savouries-box",
+    "slug": "pelli-saree-savouries-box",
+    "name": "Pelli Saree Savouries Box",
+    "price": 850,
+    "compareAt": null,
+    "image": "/images/products/sakinalu.jpg",
+    "badge": "Wedding",
+    "tag": "Curated for gifting",
+    "weights": [
+      "1 kg",
+      "2 kg",
+      "5 kg"
+    ],
+    "reviews": 0,
+    "description": "Traditional savouries box with sakinalu, muruku, chegodi and karapusa for wedding gifting.",
+    "collection": [
+      "pelli-saree",
+      "savouries"
+    ],
+    "soldOut": false,
+    "oil": "groundnut"
+  },
+  {
+    "id": "pelli-saree-mixed-hamper",
+    "slug": "pelli-saree-mixed-hamper",
+    "name": "Pelli Saree Mixed Hamper",
+    "price": 950,
+    "compareAt": null,
+    "image": "/images/categories/gifting.png",
+    "badge": "Popular",
+    "tag": "Curated for gifting",
+    "weights": [
+      "2 kg",
+      "5 kg",
+      "10 kg"
+    ],
+    "reviews": 0,
+    "description": "Balanced sweets and savouries hamper — the classic pelli saare assortment for both families.",
+    "collection": [
+      "pelli-saree",
+      "sweets",
+      "savouries"
+    ],
+    "soldOut": false,
+    "oil": null
+  },
+  {
+    "id": "pelli-saree-premium-hamper",
+    "slug": "pelli-saree-premium-hamper",
+    "name": "Pelli Saree Premium Hamper",
+    "price": 1500,
+    "compareAt": null,
+    "image": "/images/products/dry-fruit-laddu.jpg",
+    "badge": "Premium",
+    "tag": "Curated for gifting",
+    "weights": [
+      "2 kg",
+      "5 kg",
+      "10 kg"
+    ],
+    "reviews": 0,
+    "description": "Premium wedding hamper with dry fruit laddu, badusha, mysore pak and select savouries.",
+    "collection": [
+      "pelli-saree",
+      "premium",
+      "sweets"
+    ],
+    "soldOut": false,
+    "oil": "ghee"
   }
 ]

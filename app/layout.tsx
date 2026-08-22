@@ -21,8 +21,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} h-full`}>
-      <body className={inter.className}>
+    <html lang="en" className={`${inter.variable} h-full`} suppressHydrationWarning>
+      <body className={inter.className} suppressHydrationWarning>
         <SiteShell>{children}</SiteShell>
       </body>
     </html>

@@ -33,5 +33,12 @@
     "href": "/shop/?collection=premium",
     "image": "/images/categories/artisanal.png",
     "badge": "Premium"
+  },
+  {
+    "id": "pelli-saree",
+    "name": "Pelli Saree",
+    "href": "/shop/?collection=pelli-saree",
+    "image": "/images/categories/gifting.png",
+    "badge": "Wedding"
   }
 ]

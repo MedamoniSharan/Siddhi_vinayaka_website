@@ -14,6 +14,7 @@ const COLLECTION_LABELS: Record<string, string> = {
   festival: "Festival",
   premium: "Premium",
   healthy: "Healthy",
+  "pelli-saree": "Pelli Saree",
 };
 
 export function ShopCatalog() {

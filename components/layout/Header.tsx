@@ -16,6 +16,7 @@ const NAV = [
       { label: "Healthy", href: "/shop/?collection=healthy" },
       { label: "Festival", href: "/shop/?collection=festival" },
       { label: "Premium", href: "/shop/?collection=premium" },
+      { label: "Pelli Saree", href: "/shop/?collection=pelli-saree" },
       { label: "Best Sellers", href: "/shop/?collection=best-sellers" },
     ],
   },
