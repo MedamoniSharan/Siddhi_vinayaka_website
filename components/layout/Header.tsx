@@ -66,15 +66,22 @@ export function Header() {
           </Link>
         </div>
 
-        <nav className={styles.desktopNav} aria-label="Primary">
-          <ul>
-            {NAV.map((item) => (
-              <li key={item.label}>
-                <Link href={item.href}>{item.label}</Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        <div className={styles.center}>
+          <Link href="/" className={styles.brandName}>
+            <span className={styles.brandTitle}>Sidhi Vinayaka</span>
+            <span className={styles.brandSubtitle}>Sweets & Snacks</span>
+          </Link>
+
+          <nav className={styles.desktopNav} aria-label="Primary">
+            <ul>
+              {NAV.map((item) => (
+                <li key={item.label}>
+                  <Link href={item.href}>{item.label}</Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
 
         <div className={styles.sideRight}>
           <div className={styles.actions}>
