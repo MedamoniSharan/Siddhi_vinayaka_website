@@ -11,17 +11,12 @@ export default function GiftingPage() {
           loved ones.
         </p>
         <p className={styles.body}>
-          Explore hampers and artisanal assortments from our bestsellers — including
-          curated Pelli Saree boxes for weddings and engagements.
+          Explore hampers and artisanal assortments from our bestsellers. Checkout
+          is coming soon in this static demo.
         </p>
-        <div className={styles.links}>
-          <Link href="/shop/?collection=pelli-saree" className={styles.link}>
-            Shop Pelli Saree
-          </Link>
-          <Link href="/shop/" className={styles.link}>
-            Browse all products
-          </Link>
-        </div>
+        <Link href="/shop/" className={styles.link}>
+          Browse gift-ready products
+        </Link>
       </div>
     </div>
   );

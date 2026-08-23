@@ -16,7 +16,6 @@ const NAV = [
       { label: "Healthy", href: "/shop/?collection=healthy" },
       { label: "Festival", href: "/shop/?collection=festival" },
       { label: "Premium", href: "/shop/?collection=premium" },
-      { label: "Pelli Saree", href: "/shop/?collection=pelli-saree" },
       { label: "Best Sellers", href: "/shop/?collection=best-sellers" },
     ],
   },
@@ -61,15 +60,15 @@ export function Header() {
             <span className={styles.burger} aria-hidden />
           </button>
 
-          <Link href="/" className={styles.logo} aria-label="Siddhi Vinayka Home Foods home">
+          <Link href="/" className={styles.logo} aria-label="Siddhi Vinayaka Home Foods home">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/logo.png" width={512} height={512} alt="Siddhi Vinayka Home Foods" />
+            <img src="/images/logo.png" width={512} height={512} alt="Siddhi Vinayaka Home Foods" />
           </Link>
         </div>
 
         <div className={styles.center}>
           <Link href="/" className={styles.brandName}>
-            <span className={styles.brandTitle}>Sidhi Vinayaka</span>
+            <span className={styles.brandTitle}>Siddhi Vinayaka</span>
             <span className={styles.brandSubtitle}>Sweets & Snacks</span>
           </Link>
 

@@ -91,7 +91,7 @@ export function CartDrawer() {
               <img
                 className={styles.emptyLogo}
                 src="/images/logo.png"
-                alt="Siddhi Vinayka Home Foods"
+                alt="Siddhi Vinayaka Home Foods"
                 width={160}
                 height={160}
               />

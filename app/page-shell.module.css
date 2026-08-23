@@ -18,12 +18,6 @@
   text-decoration: underline;
 }
 
-.links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-16);
-}
-
 .list {
   list-style: none;
   margin: 0 0 var(--space-32);

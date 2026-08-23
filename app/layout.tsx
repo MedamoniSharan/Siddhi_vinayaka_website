@@ -10,9 +10,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Sidhi Vinayaka Sweets & Snacks — Traditional Sweets Online",
+  title: "Siddhi Vinayaka Sweets & Snacks — Traditional Sweets Online",
   description:
-    "Sidhi Vinayaka Sweets & Snacks — traditional Telangana & Andhra sweets, savouries, and pickles, freshly prepared.",
+    "Siddhi Vinayaka Sweets & Snacks — traditional Telangana & Andhra sweets, savouries, and pickles, freshly prepared.",
 };
 
 export default function RootLayout({

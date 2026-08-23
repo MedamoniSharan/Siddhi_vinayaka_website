@@ -47,12 +47,5 @@
     "href": "/shop/?collection=best-sellers",
     "image": "/images/products/sakinalu.jpg",
     "collectionKey": "best-sellers"
-  },
-  {
-    "id": "pelli-saree",
-    "name": "Pelli Saree",
-    "href": "/shop/?collection=pelli-saree",
-    "image": "/images/categories/gifting.png",
-    "collectionKey": "pelli-saree"
   }
 ]

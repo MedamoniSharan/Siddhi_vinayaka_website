@@ -14,7 +14,7 @@ export function GiftingBanner() {
             Curated gifts for you and your loved ones.
           </p>
           <Link href="/gifting/" className={styles.cta}>
-            Explore Gifting by Siddhi Vinayka
+            Explore Gifting by Siddhi Vinayaka
           </Link>
         </div>
       </div>

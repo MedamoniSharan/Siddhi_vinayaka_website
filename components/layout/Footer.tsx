@@ -16,7 +16,6 @@ const footerGroups = [
       { label: "Healthy", href: "/shop/?collection=healthy" },
       { label: "Festival", href: "/shop/?collection=festival" },
       { label: "Premium", href: "/shop/?collection=premium" },
-      { label: "Pelli Saree", href: "/shop/?collection=pelli-saree" },
     ],
   },
   {
@@ -59,7 +58,7 @@ export function Footer() {
     <footer className={styles.footer}>
       <div className={styles.shell}>
         <header className={styles.intro}>
-          <Link href="/" className={styles.brandMark} aria-label="Siddhi Vinayka Home Foods home">
+          <Link href="/" className={styles.brandMark} aria-label="Siddhi Vinayaka Home Foods home">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/logo.png"
@@ -69,7 +68,7 @@ export function Footer() {
               className={styles.brandLogo}
             />
             <span className={styles.brandText}>
-              <span className={styles.brandScript}>Siddhi Vinayka</span>
+              <span className={styles.brandScript}>Siddhi Vinayaka</span>
               <span className={styles.brandSubtitle}>HOME FOODS</span>
             </span>
           </Link>
@@ -251,7 +250,7 @@ export function Footer() {
 
       <div className={styles.bottom}>
         <p>
-          Copyright © {new Date().getFullYear()} Siddhi Vinayka Home Foods. All Rights
+          Copyright © {new Date().getFullYear()} Siddhi Vinayaka Home Foods. All Rights
           Reserved.
         </p>
       </div>

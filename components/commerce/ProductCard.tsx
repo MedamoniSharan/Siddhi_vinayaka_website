@@ -77,7 +77,7 @@ export function ProductCard({ product }: ProductCardProps) {
             <div
               className={styles.weights}
               role="group"
-              aria-label={`Select weight for ${product.name}`}
+              aria-label={`Select pack size for ${product.name}`}
             >
               {product.weights.map((w) => (
                 <button

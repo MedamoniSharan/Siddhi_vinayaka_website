@@ -58,7 +58,7 @@ export function ProductDetails({ product }: { product: Product }) {
         <h1>{product.name}</h1>
         <p className={styles.price}>{formatPrice(unitPrice)}</p>
         <p className={styles.description}>{product.description}</p>
-        <div className={styles.weights} role="group" aria-label="Select weight">
+        <div className={styles.weights} role="group" aria-label="Select pack size">
           {product.weights.map((w) => (
             <button
               key={w}

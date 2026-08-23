@@ -18,8 +18,7 @@
     "collection": [
       "best-sellers",
       "savouries",
-      "festival",
-      "pelli-saree"
+      "festival"
     ],
     "soldOut": false,
     "oil": "groundnut"
@@ -42,8 +41,7 @@
     "description": "Crispy deep-fried lentil fritters, golden and savoury.",
     "collection": [
       "best-sellers",
-      "savouries",
-      "pelli-saree"
+      "savouries"
     ],
     "soldOut": false,
     "oil": "groundnut"
@@ -66,8 +64,7 @@
     "description": "Classic crunchy rice-flour muruku, freshly prepared.",
     "collection": [
       "best-sellers",
-      "savouries",
-      "pelli-saree"
+      "savouries"
     ],
     "soldOut": false,
     "oil": "groundnut"
@@ -90,8 +87,7 @@
     "description": "Ring-shaped spicy rice-flour snack from Telangana.",
     "collection": [
       "best-sellers",
-      "savouries",
-      "pelli-saree"
+      "savouries"
     ],
     "soldOut": false,
     "oil": "groundnut"
@@ -111,11 +107,10 @@
       "1 kg"
     ],
     "reviews": 0,
-    "description": "Crispy spicy pressed strands — a favourite Andhra namkeen.",
+    "description": "Crispy spicy pressed strands \u2014 a favourite Andhra namkeen.",
     "collection": [
       "best-sellers",
-      "savouries",
-      "pelli-saree"
+      "savouries"
     ],
     "soldOut": false,
     "oil": "groundnut"
@@ -138,8 +133,7 @@
     "description": "Light rice-flour pusa with aromatic spices.",
     "collection": [
       "best-sellers",
-      "savouries",
-      "pelli-saree"
+      "savouries"
     ],
     "soldOut": false,
     "oil": "groundnut"
@@ -162,8 +156,7 @@
     "description": "Spicy mixed savouries for everyday snacking.",
     "collection": [
       "best-sellers",
-      "savouries",
-      "pelli-saree"
+      "savouries"
     ],
     "soldOut": false,
     "oil": "groundnut"
@@ -186,8 +179,7 @@
     "description": "Traditional crunchy snack prepared in small batches.",
     "collection": [
       "best-sellers",
-      "savouries",
-      "pelli-saree"
+      "savouries"
     ],
     "soldOut": false,
     "oil": "groundnut"
@@ -211,8 +203,7 @@
     "collection": [
       "best-sellers",
       "sweets",
-      "festival",
-      "pelli-saree"
+      "festival"
     ],
     "soldOut": false,
     "oil": "ghee"
@@ -236,8 +227,7 @@
     "collection": [
       "best-sellers",
       "sweets",
-      "healthy",
-      "pelli-saree"
+      "healthy"
     ],
     "soldOut": false,
     "oil": "ghee"
@@ -286,8 +276,7 @@
     "collection": [
       "best-sellers",
       "sweets",
-      "festival",
-      "pelli-saree"
+      "festival"
     ],
     "soldOut": false,
     "oil": "ghee"
@@ -311,8 +300,7 @@
     "collection": [
       "best-sellers",
       "sweets",
-      "premium",
-      "pelli-saree"
+      "premium"
     ],
     "soldOut": false,
     "oil": "ghee"
@@ -335,8 +323,7 @@
     "description": "Light and crispy poha mixture with nuts and spices.",
     "collection": [
       "best-sellers",
-      "savouries",
-      "pelli-saree"
+      "savouries"
     ],
     "soldOut": false,
     "oil": "groundnut"
@@ -356,12 +343,11 @@
       "1 kg"
     ],
     "reviews": 0,
-    "description": "Sweet stuffed flatbread — soft, rich, festive.",
+    "description": "Sweet stuffed flatbread \u2014 soft, rich, festive.",
     "collection": [
       "best-sellers",
       "sweets",
-      "festival",
-      "pelli-saree"
+      "festival"
     ],
     "soldOut": false,
     "oil": "ghee"
@@ -477,12 +463,11 @@
       "1 kg"
     ],
     "reviews": 0,
-    "description": "Urad dal (minapa) laddu — protein-rich and fragrant.",
+    "description": "Urad dal (minapa) laddu \u2014 protein-rich and fragrant.",
     "collection": [
       "best-sellers",
       "sweets",
-      "healthy",
-      "pelli-saree"
+      "healthy"
     ],
     "soldOut": false,
     "oil": "ghee"
@@ -506,8 +491,7 @@
     "collection": [
       "best-sellers",
       "sweets",
-      "healthy",
-      "pelli-saree"
+      "healthy"
     ],
     "soldOut": false,
     "oil": "ghee"
@@ -531,8 +515,7 @@
     "collection": [
       "best-sellers",
       "sweets",
-      "festival",
-      "pelli-saree"
+      "festival"
     ],
     "soldOut": false,
     "oil": "ghee"
@@ -556,8 +539,7 @@
     "collection": [
       "best-sellers",
       "savouries",
-      "festival",
-      "pelli-saree"
+      "festival"
     ],
     "soldOut": false,
     "oil": "groundnut"
@@ -581,8 +563,7 @@
     "collection": [
       "best-sellers",
       "sweets",
-      "premium",
-      "pelli-saree"
+      "premium"
     ],
     "soldOut": false,
     "oil": "ghee"
@@ -606,8 +587,7 @@
     "collection": [
       "best-sellers",
       "sweets",
-      "healthy",
-      "pelli-saree"
+      "healthy"
     ],
     "soldOut": false,
     "oil": "ghee"
@@ -627,12 +607,11 @@
       "1 kg"
     ],
     "reviews": 0,
-    "description": "Finger-millet (ragi) laddu — earthy and nourishing.",
+    "description": "Finger-millet (ragi) laddu \u2014 earthy and nourishing.",
     "collection": [
       "best-sellers",
       "sweets",
-      "healthy",
-      "pelli-saree"
+      "healthy"
     ],
     "soldOut": false,
     "oil": "ghee"
@@ -679,8 +658,7 @@
     "description": "Classic rava (semolina) laddu with ghee aroma.",
     "collection": [
       "best-sellers",
-      "sweets",
-      "pelli-saree"
+      "sweets"
     ],
     "soldOut": false,
     "oil": "ghee"
@@ -750,8 +728,7 @@
     "collection": [
       "best-sellers",
       "sweets",
-      "festival",
-      "pelli-saree"
+      "festival"
     ],
     "soldOut": false,
     "oil": "ghee"
@@ -775,102 +752,59 @@
     "collection": [
       "best-sellers",
       "savouries",
-      "festival",
-      "pelli-saree"
+      "festival"
     ],
     "soldOut": false,
     "oil": "groundnut"
   },
   {
-    "id": "pelli-saree-sweet-box",
-    "slug": "pelli-saree-sweet-box",
-    "name": "Pelli Saree Sweet Box",
-    "price": 900,
+    "id": "sakinam",
+    "slug": "sakinam",
+    "name": "Sakinam",
+    "price": 100,
     "compareAt": null,
-    "image": "/images/categories/gifting.png",
-    "badge": "Wedding",
-    "tag": "Curated for gifting",
+    "image": "/images/products/sakinam.jpg",
+    "badge": "New",
+    "tag": "Sold per piece",
     "weights": [
-      "1 kg",
-      "2 kg",
-      "5 kg"
+      "1 pc",
+      "5 pcs",
+      "10 pcs",
+      "25 pcs",
+      "50 pcs"
     ],
     "reviews": 0,
-    "description": "Assorted wedding sweets — laddu, badusha, mysore pak, bakshalu and more, arranged for pelli saare.",
+    "description": "Traditional sakinalu — crispy rice-flour rings. Price is ₹100 per piece; choose quantity or pack size.",
     "collection": [
-      "pelli-saree",
-      "sweets"
-    ],
-    "soldOut": false,
-    "oil": "ghee"
-  },
-  {
-    "id": "pelli-saree-savouries-box",
-    "slug": "pelli-saree-savouries-box",
-    "name": "Pelli Saree Savouries Box",
-    "price": 850,
-    "compareAt": null,
-    "image": "/images/products/sakinalu.jpg",
-    "badge": "Wedding",
-    "tag": "Curated for gifting",
-    "weights": [
-      "1 kg",
-      "2 kg",
-      "5 kg"
-    ],
-    "reviews": 0,
-    "description": "Traditional savouries box with sakinalu, muruku, chegodi and karapusa for wedding gifting.",
-    "collection": [
-      "pelli-saree",
-      "savouries"
+      "best-sellers",
+      "savouries",
+      "festival"
     ],
     "soldOut": false,
     "oil": "groundnut"
   },
   {
-    "id": "pelli-saree-mixed-hamper",
-    "slug": "pelli-saree-mixed-hamper",
-    "name": "Pelli Saree Mixed Hamper",
-    "price": 950,
+    "id": "boondi-laddu",
+    "slug": "boondi-laddu",
+    "name": "Laddu",
+    "price": 100,
     "compareAt": null,
-    "image": "/images/categories/gifting.png",
-    "badge": "Popular",
-    "tag": "Curated for gifting",
+    "image": "/images/products/boondi-laddu.jpg",
+    "badge": "New",
+    "tag": "Sold per piece",
     "weights": [
-      "2 kg",
-      "5 kg",
-      "10 kg"
+      "1 pc",
+      "5 pcs",
+      "10 pcs",
+      "25 pcs",
+      "50 pcs"
     ],
     "reviews": 0,
-    "description": "Balanced sweets and savouries hamper — the classic pelli saare assortment for both families.",
+    "description": "Fresh boondi laddu. Price is ₹100 per piece; choose quantity or pack size.",
     "collection": [
-      "pelli-saree",
+      "best-sellers",
       "sweets",
-      "savouries"
-    ],
-    "soldOut": false,
-    "oil": null
-  },
-  {
-    "id": "pelli-saree-premium-hamper",
-    "slug": "pelli-saree-premium-hamper",
-    "name": "Pelli Saree Premium Hamper",
-    "price": 1500,
-    "compareAt": null,
-    "image": "/images/products/dry-fruit-laddu.jpg",
-    "badge": "Premium",
-    "tag": "Curated for gifting",
-    "weights": [
-      "2 kg",
-      "5 kg",
-      "10 kg"
-    ],
-    "reviews": 0,
-    "description": "Premium wedding hamper with dry fruit laddu, badusha, mysore pak and select savouries.",
-    "collection": [
-      "pelli-saree",
-      "premium",
-      "sweets"
+      "festival"
     ],
     "soldOut": false,
     "oil": "ghee"
